@@ -1,0 +1,30 @@
+{
+  "id": "music-generation",
+  "title": "Music Generation App",
+  "industry": "Media, Content & Creative",
+  "industryId": "media-content-creative",
+  "specialization": "Music Generation",
+  "sourcePlatformGroup": "media-content-platform",
+  "sources": [
+    "AIMusicGeneration",
+    "AIMusicRightsRoyaltyTracker",
+    "AIMusicSchoolAcademyManager",
+    "AiImageGeneration"
+  ],
+  "featureCount": 192,
+  "candidateFeatureCount": 258,
+  "eliminatedSimilarFeatures": 66,
+  "evidenceCount": 909,
+  "aiPageCount": 1,
+  "sourceAIPageCount": 1,
+  "featureEvidencePolicy": "Existing source routes, pages, APIs, models, schemas, and navigation only",
+  "optimizationPolicy": "Equivalent feature names are consolidated once per industry and assigned to one canonical app owner",
+  "database": "database.sqlite",
+  "databaseSeed": {
+    "seededProjects": 3,
+    "seededTables": 46,
+    "seededRows": 697
+  },
+  "visibleFeatureCount": 57,
+  "featureVisibilityMode": "seeded-or-ai"
+}

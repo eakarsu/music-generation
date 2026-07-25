@@ -1,5 +1,86 @@
 [
   {
+    "name": "Academic",
+    "canonicalKey": "academic",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIMusicSchoolAcademyManager"
+    ],
+    "consolidatedFromApps": [
+      "media-content-creative/music-generation"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "frontend/src/components/Sidebar.jsx:42",
+        "route": "",
+        "originApp": "media-content-creative/music-generation"
+      }
+    ]
+  },
+  {
+    "name": "Academy Views",
+    "canonicalKey": "academy",
+    "aliases": [],
+    "kinds": [
+      "navigation"
+    ],
+    "routes": [],
+    "sourceProjects": [
+      "AIMusicSchoolAcademyManager"
+    ],
+    "consolidatedFromApps": [
+      "media-content-creative/music-generation"
+    ],
+    "evidence": [
+      {
+        "kind": "navigation",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "frontend/src/components/Sidebar.jsx:75",
+        "route": "",
+        "originApp": "media-content-creative/music-generation"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "frontend/src/components/Sidebar.jsx:77",
+        "route": "",
+        "originApp": "media-content-creative/music-generation"
+      }
+    ]
+  },
+  {
+    "name": "Accounting Periods",
+    "canonicalKey": "accounting period",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/accounting-periods"
+    ],
+    "sourceProjects": [
+      "AIMusicRightsRoyaltyTracker"
+    ],
+    "consolidatedFromApps": [
+      "media-content-creative/music-generation"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "server/routes/governedRoyalties.js:93",
+        "route": "/accounting-periods",
+        "originApp": "media-content-creative/music-generation"
+      }
+    ]
+  },
+  {
     "name": "AI Ensemble Assignment",
     "canonicalKey": "ai assignment ensemble",
     "aliases": [],
@@ -390,61 +471,6 @@
     ]
   },
   {
-    "name": "Academic",
-    "canonicalKey": "academic",
-    "aliases": [],
-    "kinds": [
-      "navigation"
-    ],
-    "routes": [],
-    "sourceProjects": [
-      "AIMusicSchoolAcademyManager"
-    ],
-    "consolidatedFromApps": [
-      "media-content-creative/music-generation"
-    ],
-    "evidence": [
-      {
-        "kind": "navigation",
-        "sourceProject": "AIMusicSchoolAcademyManager",
-        "path": "frontend/src/components/Sidebar.jsx:42",
-        "route": "",
-        "originApp": "media-content-creative/music-generation"
-      }
-    ]
-  },
-  {
-    "name": "Academy Views",
-    "canonicalKey": "academy",
-    "aliases": [],
-    "kinds": [
-      "navigation"
-    ],
-    "routes": [],
-    "sourceProjects": [
-      "AIMusicSchoolAcademyManager"
-    ],
-    "consolidatedFromApps": [
-      "media-content-creative/music-generation"
-    ],
-    "evidence": [
-      {
-        "kind": "navigation",
-        "sourceProject": "AIMusicSchoolAcademyManager",
-        "path": "frontend/src/components/Sidebar.jsx:75",
-        "route": "",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "navigation",
-        "sourceProject": "AIMusicSchoolAcademyManager",
-        "path": "frontend/src/components/Sidebar.jsx:77",
-        "route": "",
-        "originApp": "media-content-creative/music-generation"
-      }
-    ]
-  },
-  {
     "name": "Art Instructor",
     "canonicalKey": "art instructor",
     "aliases": [
@@ -634,6 +660,32 @@
     ]
   },
   {
+    "name": "Backtests",
+    "canonicalKey": "backtest",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/backtests"
+    ],
+    "sourceProjects": [
+      "AIMusicRightsRoyaltyTracker"
+    ],
+    "consolidatedFromApps": [
+      "media-content-creative/music-generation"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "server/routes/governedRoyalties.js:461",
+        "route": "/backtests",
+        "originApp": "media-content-creative/music-generation"
+      }
+    ]
+  },
+  {
     "name": "Billing",
     "canonicalKey": "billing",
     "aliases": [],
@@ -749,6 +801,32 @@
     ]
   },
   {
+    "name": "Calculations",
+    "canonicalKey": "calculation",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/statements/:statementId/calculations"
+    ],
+    "sourceProjects": [
+      "AIMusicRightsRoyaltyTracker"
+    ],
+    "consolidatedFromApps": [
+      "media-content-creative/music-generation"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "server/routes/governedRoyalties.js:200",
+        "route": "/statements/:statementId/calculations",
+        "originApp": "media-content-creative/music-generation"
+      }
+    ]
+  },
+  {
     "name": "Catalog",
     "canonicalKey": "catalog",
     "aliases": [
@@ -820,6 +898,32 @@
         "sourceProject": "AIMusicRightsRoyaltyTracker",
         "path": "server/routes/ai.js:368",
         "route": "/catalog-acquisition-advisor",
+        "originApp": "media-content-creative/music-generation"
+      }
+    ]
+  },
+  {
+    "name": "Catalog Advisor",
+    "canonicalKey": "advisor catalog",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/catalog-advisor"
+    ],
+    "sourceProjects": [
+      "AIMusicRightsRoyaltyTracker"
+    ],
+    "consolidatedFromApps": [
+      "media-content-creative/music-generation"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "server/routes/governedRoyalties.js:53",
+        "route": "/catalog-advisor",
         "originApp": "media-content-creative/music-generation"
       }
     ]
@@ -969,7 +1073,7 @@
   },
   {
     "name": "Cf Brand Consistency Guardrails Enforcing U",
-    "canonicalKey": "brand cf consistency enforcing guardrails u",
+    "canonicalKey": "brand cf consistency enforcing guardrail u",
     "aliases": [],
     "kinds": [
       "page"
@@ -1284,6 +1388,13 @@
     "evidence": [
       {
         "kind": "api",
+        "sourceProject": "AIBookPublishingPipeline",
+        "path": "backend/routes/ai.js:605",
+        "route": "/contract-analysis",
+        "originApp": "media-content-creative/comic-book-generator"
+      },
+      {
+        "kind": "api",
         "sourceProject": "AIMusicRightsRoyaltyTracker",
         "path": "server/routes/ai.js:105",
         "route": "/contract-analysis",
@@ -1301,39 +1412,6 @@
         "sourceProject": "AIMusicRightsRoyaltyTracker",
         "path": "client/src/pages/Dashboard.js:17",
         "route": "/ai/contract-analysis",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIBookPublishingPipeline",
-        "path": "backend/routes/ai.js:605",
-        "route": "/contract-analysis",
-        "originApp": "media-content-creative/comic-book-generator"
-      }
-    ]
-  },
-  {
-    "name": "Contracts Page",
-    "canonicalKey": "contracts",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/ContractsPage"
-    ],
-    "sourceProjects": [
-      "AIMusicRightsRoyaltyTracker"
-    ],
-    "consolidatedFromApps": [
-      "media-content-creative/music-generation"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIMusicRightsRoyaltyTracker",
-        "path": "client/src/pages/ContractsPage.js",
-        "route": "/ContractsPage",
         "originApp": "media-content-creative/music-generation"
       }
     ]
@@ -1360,6 +1438,32 @@
         "sourceProject": "AIMusicRightsRoyaltyTracker",
         "path": "server/routes/ai.js:276",
         "route": "/copyright-tracking",
+        "originApp": "media-content-creative/music-generation"
+      }
+    ]
+  },
+  {
+    "name": "Corrections",
+    "canonicalKey": "correction",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/calculations/:id/corrections"
+    ],
+    "sourceProjects": [
+      "AIMusicRightsRoyaltyTracker"
+    ],
+    "consolidatedFromApps": [
+      "media-content-creative/music-generation"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "server/routes/governedRoyalties.js:335",
+        "route": "/calculations/:id/corrections",
         "originApp": "media-content-creative/music-generation"
       }
     ]
@@ -1631,17 +1735,17 @@
     "evidence": [
       {
         "kind": "api",
-        "sourceProject": "AIMusicSchoolAcademyManager",
-        "path": "backend/src/routes/recitals.js:90",
-        "route": "/:id/export-pdf",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "api",
         "sourceProject": "AIMemoryBookCreator",
         "path": "backend/routes/memoryBooks.js:235",
         "route": "/:id/export-pdf",
         "originApp": "media-content-creative/comic-book-generator"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "backend/src/routes/recitals.js:90",
+        "route": "/:id/export-pdf",
+        "originApp": "media-content-creative/music-generation"
       }
     ]
   },
@@ -1826,6 +1930,100 @@
     ]
   },
   {
+    "name": "Gap Agentic",
+    "canonicalKey": "agentic gap",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/GapAgentic"
+    ],
+    "sourceProjects": [
+      "AILocalizationTranslationAgency",
+      "AIMemoryBookCreator",
+      "AIMuseumCulturalInstitutionManager",
+      "AIMusicGeneration",
+      "AIMusicRightsRoyaltyTracker",
+      "AIMusicSchoolAcademyManager",
+      "AINewsletterGenerator",
+      "AINewsroomAssistant",
+      "AiMarketingCopyGenerator"
+    ],
+    "consolidatedFromApps": [
+      "media-content-creative/comic-book-generator",
+      "media-content-creative/logo-brand-kit-generator",
+      "media-content-creative/marketing-copy-generator",
+      "media-content-creative/music-generation",
+      "media-content-creative/social-media-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIMemoryBookCreator",
+        "path": "frontend/src/pages/GapAgentic.jsx",
+        "route": "/GapAgentic",
+        "originApp": "media-content-creative/comic-book-generator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AILocalizationTranslationAgency",
+        "path": "client/src/pages/GapAgentic.jsx",
+        "route": "/GapAgentic",
+        "originApp": "media-content-creative/logo-brand-kit-generator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AINewsletterGenerator",
+        "path": "client/src/pages/GapAgentic.jsx",
+        "route": "/GapAgentic",
+        "originApp": "media-content-creative/marketing-copy-generator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AiMarketingCopyGenerator",
+        "path": "frontend/src/pages/GapAgentic.jsx",
+        "route": "/GapAgentic",
+        "originApp": "media-content-creative/marketing-copy-generator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIMusicGeneration",
+        "path": "client/src/pages/GapAgentic.jsx",
+        "route": "/GapAgentic",
+        "originApp": "media-content-creative/music-generation"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "client/src/pages/GapAgentic.jsx",
+        "route": "/GapAgentic",
+        "originApp": "media-content-creative/music-generation"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "frontend/src/pages/GapAgentic.jsx",
+        "route": "/GapAgentic",
+        "originApp": "media-content-creative/music-generation"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIMuseumCulturalInstitutionManager",
+        "path": "frontend/src/pages/GapAgentic.jsx",
+        "route": "/GapAgentic",
+        "originApp": "media-content-creative/social-media-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AINewsroomAssistant",
+        "path": "frontend/src/pages/GapAgentic.jsx",
+        "route": "/GapAgentic",
+        "originApp": "media-content-creative/social-media-manager"
+      }
+    ]
+  },
+  {
     "name": "Gap AI Audio Stem Separator",
     "canonicalKey": "ai audio gap separator stem",
     "aliases": [],
@@ -1956,100 +2154,6 @@
     ]
   },
   {
-    "name": "Gap Agentic",
-    "canonicalKey": "agentic gap",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/GapAgentic"
-    ],
-    "sourceProjects": [
-      "AILocalizationTranslationAgency",
-      "AIMemoryBookCreator",
-      "AIMuseumCulturalInstitutionManager",
-      "AIMusicGeneration",
-      "AIMusicRightsRoyaltyTracker",
-      "AIMusicSchoolAcademyManager",
-      "AINewsletterGenerator",
-      "AINewsroomAssistant",
-      "AiMarketingCopyGenerator"
-    ],
-    "consolidatedFromApps": [
-      "media-content-creative/comic-book-generator",
-      "media-content-creative/logo-brand-kit-generator",
-      "media-content-creative/marketing-copy-generator",
-      "media-content-creative/music-generation",
-      "media-content-creative/social-media-manager"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIMusicGeneration",
-        "path": "client/src/pages/GapAgentic.jsx",
-        "route": "/GapAgentic",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIMusicRightsRoyaltyTracker",
-        "path": "client/src/pages/GapAgentic.jsx",
-        "route": "/GapAgentic",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIMusicSchoolAcademyManager",
-        "path": "frontend/src/pages/GapAgentic.jsx",
-        "route": "/GapAgentic",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AILocalizationTranslationAgency",
-        "path": "client/src/pages/GapAgentic.jsx",
-        "route": "/GapAgentic",
-        "originApp": "media-content-creative/logo-brand-kit-generator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AINewsletterGenerator",
-        "path": "client/src/pages/GapAgentic.jsx",
-        "route": "/GapAgentic",
-        "originApp": "media-content-creative/marketing-copy-generator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AiMarketingCopyGenerator",
-        "path": "frontend/src/pages/GapAgentic.jsx",
-        "route": "/GapAgentic",
-        "originApp": "media-content-creative/marketing-copy-generator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIMemoryBookCreator",
-        "path": "frontend/src/pages/GapAgentic.jsx",
-        "route": "/GapAgentic",
-        "originApp": "media-content-creative/comic-book-generator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIMuseumCulturalInstitutionManager",
-        "path": "frontend/src/pages/GapAgentic.jsx",
-        "route": "/GapAgentic",
-        "originApp": "media-content-creative/social-media-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AINewsroomAssistant",
-        "path": "frontend/src/pages/GapAgentic.jsx",
-        "route": "/GapAgentic",
-        "originApp": "media-content-creative/social-media-manager"
-      }
-    ]
-  },
-  {
     "name": "Gap Artist",
     "canonicalKey": "artist gap",
     "aliases": [],
@@ -2104,17 +2208,17 @@
     "evidence": [
       {
         "kind": "page",
-        "sourceProject": "AIMusicGeneration",
-        "path": "client/src/pages/GapAudio.jsx",
-        "route": "/GapAudio",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "page",
         "sourceProject": "AIMemoryBookCreator",
         "path": "frontend/src/pages/GapAudio.jsx",
         "route": "/GapAudio",
         "originApp": "media-content-creative/comic-book-generator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIMusicGeneration",
+        "path": "client/src/pages/GapAudio.jsx",
+        "route": "/GapAudio",
+        "originApp": "media-content-creative/music-generation"
       }
     ]
   },
@@ -2451,17 +2555,17 @@
     "evidence": [
       {
         "kind": "page",
-        "sourceProject": "AIMusicGeneration",
-        "path": "client/src/pages/GapLimited.jsx",
-        "route": "/GapLimited",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "page",
         "sourceProject": "AILocalizationTranslationAgency",
         "path": "client/src/pages/GapLimited.jsx",
         "route": "/GapLimited",
         "originApp": "media-content-creative/logo-brand-kit-generator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIMusicGeneration",
+        "path": "client/src/pages/GapLimited.jsx",
+        "route": "/GapLimited",
+        "originApp": "media-content-creative/music-generation"
       }
     ]
   },
@@ -2590,17 +2694,17 @@
     "evidence": [
       {
         "kind": "page",
-        "sourceProject": "AIMusicSchoolAcademyManager",
-        "path": "frontend/src/pages/GapNative.jsx",
-        "route": "/GapNative",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "page",
         "sourceProject": "AINewsletterGenerator",
         "path": "client/src/pages/GapNative.jsx",
         "route": "/GapNative",
         "originApp": "media-content-creative/marketing-copy-generator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "frontend/src/pages/GapNative.jsx",
+        "route": "/GapNative",
+        "originApp": "media-content-creative/music-generation"
       }
     ]
   },
@@ -2932,20 +3036,6 @@
     "evidence": [
       {
         "kind": "page",
-        "sourceProject": "AiImageGeneration",
-        "path": "frontend/src/App.jsx:135",
-        "route": "/gap-no-webhook-surface",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AiImageGeneration",
-        "path": "frontend/src/pages/GapNoWebhookSurface.jsx",
-        "route": "/GapNoWebhookSurface",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "page",
         "sourceProject": "AiInteriorDesign",
         "path": "frontend/src/App.jsx:4109",
         "route": "/gap-no-webhook-surface",
@@ -2957,6 +3047,20 @@
         "path": "frontend/src/pages/GapNoWebhookSurface.jsx",
         "route": "/GapNoWebhookSurface",
         "originApp": "media-content-creative/logo-brand-kit-generator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AiImageGeneration",
+        "path": "frontend/src/App.jsx:135",
+        "route": "/gap-no-webhook-surface",
+        "originApp": "media-content-creative/music-generation"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AiImageGeneration",
+        "path": "frontend/src/pages/GapNoWebhookSurface.jsx",
+        "route": "/GapNoWebhookSurface",
+        "originApp": "media-content-creative/music-generation"
       }
     ]
   },
@@ -3033,17 +3137,17 @@
     "evidence": [
       {
         "kind": "page",
-        "sourceProject": "AIMusicRightsRoyaltyTracker",
-        "path": "client/src/pages/GapPlagiarism.jsx",
-        "route": "/GapPlagiarism",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "page",
         "sourceProject": "AiMarketingCopyGenerator",
         "path": "frontend/src/pages/GapPlagiarism.jsx",
         "route": "/GapPlagiarism",
         "originApp": "media-content-creative/marketing-copy-generator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "client/src/pages/GapPlagiarism.jsx",
+        "route": "/GapPlagiarism",
+        "originApp": "media-content-creative/music-generation"
       }
     ]
   },
@@ -3072,20 +3176,6 @@
     "evidence": [
       {
         "kind": "page",
-        "sourceProject": "AIMusicGeneration",
-        "path": "client/src/pages/GapRealTime.jsx",
-        "route": "/GapRealTime",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIMusicRightsRoyaltyTracker",
-        "path": "client/src/pages/GapRealTime.jsx",
-        "route": "/GapRealTime",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "page",
         "sourceProject": "AINewsletterGenerator",
         "path": "client/src/pages/GapRealTime.jsx",
         "route": "/GapRealTime",
@@ -3097,6 +3187,20 @@
         "path": "frontend/src/pages/GapRealTime.jsx",
         "route": "/GapRealTime",
         "originApp": "media-content-creative/marketing-copy-generator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIMusicGeneration",
+        "path": "client/src/pages/GapRealTime.jsx",
+        "route": "/GapRealTime",
+        "originApp": "media-content-creative/music-generation"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "client/src/pages/GapRealTime.jsx",
+        "route": "/GapRealTime",
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "page",
@@ -3312,13 +3416,6 @@
     "evidence": [
       {
         "kind": "page",
-        "sourceProject": "AIMusicGeneration",
-        "path": "client/src/pages/GapVertical.jsx",
-        "route": "/GapVertical",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "page",
         "sourceProject": "AILocalizationTranslationAgency",
         "path": "client/src/pages/GapVertical.jsx",
         "route": "/GapVertical",
@@ -3330,6 +3427,13 @@
         "path": "frontend/src/pages/GapVertical.jsx",
         "route": "/GapVertical",
         "originApp": "media-content-creative/marketing-copy-generator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIMusicGeneration",
+        "path": "client/src/pages/GapVertical.jsx",
+        "route": "/GapVertical",
+        "originApp": "media-content-creative/music-generation"
       }
     ]
   },
@@ -3354,17 +3458,17 @@
     "evidence": [
       {
         "kind": "page",
-        "sourceProject": "AIMusicSchoolAcademyManager",
-        "path": "frontend/src/pages/GapVideo.jsx",
-        "route": "/GapVideo",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "page",
         "sourceProject": "AIMemoryBookCreator",
         "path": "frontend/src/pages/GapVideo.jsx",
         "route": "/GapVideo",
         "originApp": "media-content-creative/comic-book-generator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "frontend/src/pages/GapVideo.jsx",
+        "route": "/GapVideo",
+        "originApp": "media-content-creative/music-generation"
       }
     ]
   },
@@ -3394,17 +3498,10 @@
     "evidence": [
       {
         "kind": "page",
-        "sourceProject": "AIMusicRightsRoyaltyTracker",
-        "path": "client/src/pages/GapWebhooks.jsx",
-        "route": "/GapWebhooks",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIMusicSchoolAcademyManager",
+        "sourceProject": "AIMemoryBookCreator",
         "path": "frontend/src/pages/GapWebhooks.jsx",
         "route": "/GapWebhooks",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "page",
@@ -3422,10 +3519,17 @@
       },
       {
         "kind": "page",
-        "sourceProject": "AIMemoryBookCreator",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "client/src/pages/GapWebhooks.jsx",
+        "route": "/GapWebhooks",
+        "originApp": "media-content-creative/music-generation"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIMusicSchoolAcademyManager",
         "path": "frontend/src/pages/GapWebhooks.jsx",
         "route": "/GapWebhooks",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       }
     ]
   },
@@ -3442,9 +3546,6 @@
       "/:id/generate",
       "/Generate",
       "/ai/generate",
-      "/api/avatars/did/generate",
-      "/api/avatars/heygen/generate",
-      "/api/avatars/synthesia/generate",
       "/generate"
     ],
     "sourceProjects": [
@@ -3454,7 +3555,6 @@
       "AILogoBrandKitGenerator",
       "AIMusicGeneration",
       "AIPlagiarismAIContentDetector",
-      "AIVideoTestimonialCreator",
       "AiContentStudio",
       "AiImageGeneration",
       "AiVideoScriptContent"
@@ -3468,293 +3568,6 @@
       "media-content-creative/video-generation"
     ],
     "evidence": [
-      {
-        "kind": "api",
-        "sourceProject": "AIMusicGeneration",
-        "path": "server/routes/beatPatterns.js:66",
-        "route": "/ai/generate",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIMusicGeneration",
-        "path": "server/routes/chordProgressions.js:66",
-        "route": "/ai/generate",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIMusicGeneration",
-        "path": "server/routes/compositions.js:103",
-        "route": "/ai/generate",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIMusicGeneration",
-        "path": "server/routes/genreFusions.js:66",
-        "route": "/ai/generate",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIMusicGeneration",
-        "path": "server/routes/lyrics.js:66",
-        "route": "/ai/generate",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIMusicGeneration",
-        "path": "server/routes/melodies.js:66",
-        "route": "/ai/generate",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIMusicGeneration",
-        "path": "server/routes/mixingAssistant.js:66",
-        "route": "/ai/generate",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIMusicGeneration",
-        "path": "server/routes/musicAnalysis.js:66",
-        "route": "/ai/generate",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIMusicGeneration",
-        "path": "server/routes/remixes.js:66",
-        "route": "/ai/generate",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIMusicGeneration",
-        "path": "server/routes/soundDesigns.js:66",
-        "route": "/ai/generate",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "navigation",
-        "sourceProject": "AiImageGeneration",
-        "path": "frontend/src/components/Sidebar.jsx:9",
-        "route": "",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AiImageGeneration",
-        "path": "frontend/src/App.jsx:104",
-        "route": "/generate",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AiImageGeneration",
-        "path": "frontend/src/components/Sidebar.jsx:9",
-        "route": "/generate",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AiImageGeneration",
-        "path": "frontend/src/pages/Dashboard.jsx:4",
-        "route": "/generate",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AiImageGeneration",
-        "path": "frontend/src/pages/Generate.jsx",
-        "route": "/Generate",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AiImageGeneration",
-        "path": "sd_server/server.py:74",
-        "route": "/generate",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIVideoTestimonialCreator",
-        "path": "backend/server.js:1867",
-        "route": "/api/avatars/heygen/generate",
-        "originApp": "media-content-creative/video-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIVideoTestimonialCreator",
-        "path": "backend/server.js:1883",
-        "route": "/api/avatars/did/generate",
-        "originApp": "media-content-creative/video-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIVideoTestimonialCreator",
-        "path": "backend/server.js:1899",
-        "route": "/api/avatars/synthesia/generate",
-        "originApp": "media-content-creative/video-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiVideoScriptContent",
-        "path": "backend/src/routes/analytics.routes.ts:11",
-        "route": "/generate",
-        "originApp": "media-content-creative/video-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiVideoScriptContent",
-        "path": "backend/src/routes/calendar.routes.ts:12",
-        "route": "/generate",
-        "originApp": "media-content-creative/video-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiVideoScriptContent",
-        "path": "backend/src/routes/captions.routes.ts:11",
-        "route": "/generate",
-        "originApp": "media-content-creative/video-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiVideoScriptContent",
-        "path": "backend/src/routes/comments.routes.ts:12",
-        "route": "/generate",
-        "originApp": "media-content-creative/video-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiVideoScriptContent",
-        "path": "backend/src/routes/competitors.routes.ts:11",
-        "route": "/generate",
-        "originApp": "media-content-creative/video-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiVideoScriptContent",
-        "path": "backend/src/routes/ctas.routes.ts:11",
-        "route": "/generate",
-        "originApp": "media-content-creative/video-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiVideoScriptContent",
-        "path": "backend/src/routes/descriptions.routes.ts:12",
-        "route": "/generate",
-        "originApp": "media-content-creative/video-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiVideoScriptContent",
-        "path": "backend/src/routes/hashtags.routes.ts:12",
-        "route": "/generate",
-        "originApp": "media-content-creative/video-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiVideoScriptContent",
-        "path": "backend/src/routes/hooks.routes.ts:12",
-        "route": "/generate",
-        "originApp": "media-content-creative/video-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiVideoScriptContent",
-        "path": "backend/src/routes/ideas.routes.ts:12",
-        "route": "/generate",
-        "originApp": "media-content-creative/video-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiVideoScriptContent",
-        "path": "backend/src/routes/personas.routes.ts:11",
-        "route": "/generate",
-        "originApp": "media-content-creative/video-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiVideoScriptContent",
-        "path": "backend/src/routes/podcast-transcripts.routes.ts:11",
-        "route": "/generate",
-        "originApp": "media-content-creative/video-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiVideoScriptContent",
-        "path": "backend/src/routes/repurpose.routes.ts:11",
-        "route": "/generate",
-        "originApp": "media-content-creative/video-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiVideoScriptContent",
-        "path": "backend/src/routes/scripts.routes.ts:12",
-        "route": "/generate",
-        "originApp": "media-content-creative/video-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiVideoScriptContent",
-        "path": "backend/src/routes/seo.routes.ts:12",
-        "route": "/generate",
-        "originApp": "media-content-creative/video-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiVideoScriptContent",
-        "path": "backend/src/routes/thumbnails.routes.ts:12",
-        "route": "/generate",
-        "originApp": "media-content-creative/video-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiVideoScriptContent",
-        "path": "backend/src/routes/titles.routes.ts:12",
-        "route": "/generate",
-        "originApp": "media-content-creative/video-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiVideoScriptContent",
-        "path": "backend/src/routes/trends.routes.ts:12",
-        "route": "/generate",
-        "originApp": "media-content-creative/video-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiVideoScriptContent",
-        "path": "backend/src/routes/video-summaries.routes.ts:11",
-        "route": "/generate",
-        "originApp": "media-content-creative/video-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiVideoScriptContent",
-        "path": "backend/src/routes/viral-predictions.routes.ts:11",
-        "route": "/generate",
-        "originApp": "media-content-creative/video-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AILogoBrandKitGenerator",
-        "path": "server/routes/featureRoute.js:123",
-        "route": "/generate",
-        "originApp": "media-content-creative/logo-brand-kit-generator"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIAdCopyCreativeGenerator",
-        "path": "backend/src/routes/ai.js:105",
-        "route": "/generate",
-        "originApp": "media-content-creative/marketing-copy-generator"
-      },
       {
         "kind": "api",
         "sourceProject": "AIContentRepurposingEngine",
@@ -3964,6 +3777,272 @@
         "path": "backend/src/routes/npcs.js:84",
         "route": "/ai/generate",
         "originApp": "media-content-creative/game-balancing-playtesting-agent"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AILogoBrandKitGenerator",
+        "path": "server/routes/featureRoute.js:123",
+        "route": "/generate",
+        "originApp": "media-content-creative/logo-brand-kit-generator"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIAdCopyCreativeGenerator",
+        "path": "backend/src/routes/ai.js:105",
+        "route": "/generate",
+        "originApp": "media-content-creative/marketing-copy-generator"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIMusicGeneration",
+        "path": "server/routes/beatPatterns.js:66",
+        "route": "/ai/generate",
+        "originApp": "media-content-creative/music-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIMusicGeneration",
+        "path": "server/routes/chordProgressions.js:66",
+        "route": "/ai/generate",
+        "originApp": "media-content-creative/music-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIMusicGeneration",
+        "path": "server/routes/compositions.js:103",
+        "route": "/ai/generate",
+        "originApp": "media-content-creative/music-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIMusicGeneration",
+        "path": "server/routes/genreFusions.js:66",
+        "route": "/ai/generate",
+        "originApp": "media-content-creative/music-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIMusicGeneration",
+        "path": "server/routes/lyrics.js:66",
+        "route": "/ai/generate",
+        "originApp": "media-content-creative/music-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIMusicGeneration",
+        "path": "server/routes/melodies.js:66",
+        "route": "/ai/generate",
+        "originApp": "media-content-creative/music-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIMusicGeneration",
+        "path": "server/routes/mixingAssistant.js:66",
+        "route": "/ai/generate",
+        "originApp": "media-content-creative/music-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIMusicGeneration",
+        "path": "server/routes/musicAnalysis.js:66",
+        "route": "/ai/generate",
+        "originApp": "media-content-creative/music-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIMusicGeneration",
+        "path": "server/routes/remixes.js:66",
+        "route": "/ai/generate",
+        "originApp": "media-content-creative/music-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIMusicGeneration",
+        "path": "server/routes/soundDesigns.js:66",
+        "route": "/ai/generate",
+        "originApp": "media-content-creative/music-generation"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AiImageGeneration",
+        "path": "frontend/src/components/Sidebar.jsx:9",
+        "route": "",
+        "originApp": "media-content-creative/music-generation"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AiImageGeneration",
+        "path": "frontend/src/App.jsx:104",
+        "route": "/generate",
+        "originApp": "media-content-creative/music-generation"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AiImageGeneration",
+        "path": "frontend/src/components/Sidebar.jsx:9",
+        "route": "/generate",
+        "originApp": "media-content-creative/music-generation"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AiImageGeneration",
+        "path": "frontend/src/pages/Dashboard.jsx:4",
+        "route": "/generate",
+        "originApp": "media-content-creative/music-generation"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AiImageGeneration",
+        "path": "frontend/src/pages/Generate.jsx",
+        "route": "/Generate",
+        "originApp": "media-content-creative/music-generation"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AiImageGeneration",
+        "path": "sd_server/server.py:74",
+        "route": "/generate",
+        "originApp": "media-content-creative/music-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiVideoScriptContent",
+        "path": "backend/src/routes/analytics.routes.ts:11",
+        "route": "/generate",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiVideoScriptContent",
+        "path": "backend/src/routes/calendar.routes.ts:12",
+        "route": "/generate",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiVideoScriptContent",
+        "path": "backend/src/routes/captions.routes.ts:11",
+        "route": "/generate",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiVideoScriptContent",
+        "path": "backend/src/routes/comments.routes.ts:12",
+        "route": "/generate",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiVideoScriptContent",
+        "path": "backend/src/routes/competitors.routes.ts:11",
+        "route": "/generate",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiVideoScriptContent",
+        "path": "backend/src/routes/ctas.routes.ts:11",
+        "route": "/generate",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiVideoScriptContent",
+        "path": "backend/src/routes/descriptions.routes.ts:12",
+        "route": "/generate",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiVideoScriptContent",
+        "path": "backend/src/routes/hashtags.routes.ts:12",
+        "route": "/generate",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiVideoScriptContent",
+        "path": "backend/src/routes/hooks.routes.ts:12",
+        "route": "/generate",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiVideoScriptContent",
+        "path": "backend/src/routes/ideas.routes.ts:12",
+        "route": "/generate",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiVideoScriptContent",
+        "path": "backend/src/routes/personas.routes.ts:11",
+        "route": "/generate",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiVideoScriptContent",
+        "path": "backend/src/routes/podcast-transcripts.routes.ts:11",
+        "route": "/generate",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiVideoScriptContent",
+        "path": "backend/src/routes/repurpose.routes.ts:11",
+        "route": "/generate",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiVideoScriptContent",
+        "path": "backend/src/routes/scripts.routes.ts:12",
+        "route": "/generate",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiVideoScriptContent",
+        "path": "backend/src/routes/seo.routes.ts:12",
+        "route": "/generate",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiVideoScriptContent",
+        "path": "backend/src/routes/thumbnails.routes.ts:12",
+        "route": "/generate",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiVideoScriptContent",
+        "path": "backend/src/routes/titles.routes.ts:12",
+        "route": "/generate",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiVideoScriptContent",
+        "path": "backend/src/routes/trends.routes.ts:12",
+        "route": "/generate",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiVideoScriptContent",
+        "path": "backend/src/routes/video-summaries.routes.ts:11",
+        "route": "/generate",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiVideoScriptContent",
+        "path": "backend/src/routes/viral-predictions.routes.ts:11",
+        "route": "/generate",
+        "originApp": "media-content-creative/video-generation"
       }
     ]
   },
@@ -4134,11 +4213,14 @@
     ],
     "routes": [
       "/:id(\\\\d+)/history",
+      "/:id/history",
       "/History",
       "/HistoryDetail",
       "/HistoryPage",
+      "/ai/history",
       "/analytics/:type/history",
       "/api/ai/history",
+      "/cases/:id/history",
       "/history"
     ],
     "sourceProjects": [
@@ -4148,6 +4230,7 @@
       "AIBookPublishingPipeline",
       "AIBrandVoiceConsistencyChecker",
       "AIComicBookGenerator",
+      "AIEventPlanner",
       "AILocalizationTranslationAgency",
       "AILogoBrandKitGenerator",
       "AIMemoryBookCreator",
@@ -4193,668 +4276,640 @@
     "evidence": [
       {
         "kind": "api",
-        "sourceProject": "AIMusicGeneration",
-        "path": "server/routes/artist-collab-platform.js:94",
+        "sourceProject": "AIBookPublishingPipeline",
+        "path": "backend/routes/gap_no_ai_fraud_piracy_scanning_across_retailers.js:134",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicGeneration",
-        "path": "server/routes/daw-copilot.js:94",
+        "sourceProject": "AIBookPublishingPipeline",
+        "path": "backend/routes/gap_no_ai_sales_channel_reconciliation.js:134",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicGeneration",
-        "path": "server/routes/gap-ai-audio-stem-separator.js:94",
+        "sourceProject": "AIBookPublishingPipeline",
+        "path": "backend/routes/gap_no_ai_voiceover_audiobook_generation_pipeline.js:134",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicGeneration",
-        "path": "server/routes/gap-ai-cover-art-generator.js:94",
+        "sourceProject": "AIBookPublishingPipeline",
+        "path": "backend/routes/gap_no_bookseller_retailer_crm_module.js:134",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicGeneration",
-        "path": "server/routes/gap-ai-mastering-engineer.js:94",
+        "sourceProject": "AIBookPublishingPipeline",
+        "path": "backend/routes/gap_no_direct_ingramspark_kdp_api_client_integrations_.js:134",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicGeneration",
-        "path": "server/routes/gap-ai-vocal-melody-cloner.js:94",
+        "sourceProject": "AIBookPublishingPipeline",
+        "path": "backend/routes/gap_no_e_book_conversion_pipeline_epub_mobi_pdf.js:134",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicGeneration",
-        "path": "server/routes/gap-audio.js:94",
+        "sourceProject": "AIBookPublishingPipeline",
+        "path": "backend/routes/gap_no_image_generation_for_marketing_assets_covers.js:134",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicGeneration",
-        "path": "server/routes/gap-collaboration.js:94",
+        "sourceProject": "AIBookPublishingPipeline",
+        "path": "backend/routes/gap_no_print_run_cost_calculator.js:134",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicGeneration",
-        "path": "server/routes/gap-community.js:94",
+        "sourceProject": "AIBookPublishingPipeline",
+        "path": "backend/routes/gap_notification_routes_exist_but_no_actual_sms_email_.js:134",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicGeneration",
-        "path": "server/routes/gap-daw.js:94",
+        "sourceProject": "AIComicBookGenerator",
+        "path": "server/routes/gap_no_actual_image_generation_pipeline_only_text_endp.js:134",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicGeneration",
-        "path": "server/routes/gap-distribution.js:94",
+        "sourceProject": "AIComicBookGenerator",
+        "path": "server/routes/gap_no_ai_character_consistency_across_panels.js:134",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicGeneration",
-        "path": "server/routes/gap-limited.js:94",
+        "sourceProject": "AIComicBookGenerator",
+        "path": "server/routes/gap_no_ai_lettering_speech_bubble_auto_layout.js:134",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicGeneration",
-        "path": "server/routes/gap-music.js:94",
+        "sourceProject": "AIComicBookGenerator",
+        "path": "server/routes/gap_no_ai_page_flow_pacing_recommender.js:134",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicGeneration",
-        "path": "server/routes/gap-royalty.js:94",
+        "sourceProject": "AIComicBookGenerator",
+        "path": "server/routes/gap_no_collaboration_writer_artist_workflow.js:134",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicGeneration",
-        "path": "server/routes/music-composer-agent.js:94",
+        "sourceProject": "AIComicBookGenerator",
+        "path": "server/routes/gap_no_commenting_or_beta_reader_feedback_loop.js:134",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicGeneration",
-        "path": "server/routes/producer-vertical-pack.js:94",
+        "sourceProject": "AIComicBookGenerator",
+        "path": "server/routes/gap_no_export_to_cbz_pdf_epub_or_print_ready_pdf.js:134",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicGeneration",
-        "path": "server/routes/remix-agent.js:94",
+        "sourceProject": "AIComicBookGenerator",
+        "path": "server/routes/gap_no_marketplace_publishing_layer.js:134",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicRightsRoyaltyTracker",
-        "path": "server/routes/artist-earnings-intel.js:94",
+        "sourceProject": "AIComicBookGenerator",
+        "path": "server/routes/gap_no_notification_system_or_webhook_outbound.js:134",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicRightsRoyaltyTracker",
-        "path": "server/routes/catalog-acquisition-advisor.js:94",
+        "sourceProject": "AIComicBookGenerator",
+        "path": "server/routes/gap_only_5_backend_routes_and_5_frontend_pages_thin_do.js:134",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicRightsRoyaltyTracker",
-        "path": "server/routes/gap-artist.js:94",
-        "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "sourceProject": "AIMemoryBookCreator",
+        "path": "backend/governance/routerFactory.js:136",
+        "route": "/cases/:id/history",
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicRightsRoyaltyTracker",
-        "path": "server/routes/gap-copyright.js:94",
+        "sourceProject": "AIMemoryBookCreator",
+        "path": "backend/routes/family-legacy-workflow.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicRightsRoyaltyTracker",
-        "path": "server/routes/gap-dispute.js:94",
+        "sourceProject": "AIMemoryBookCreator",
+        "path": "backend/routes/gap-audio.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicRightsRoyaltyTracker",
-        "path": "server/routes/gap-licensing-recommender.js:94",
+        "sourceProject": "AIMemoryBookCreator",
+        "path": "backend/routes/gap-collaborative.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicRightsRoyaltyTracker",
-        "path": "server/routes/gap-mechanical.js:94",
+        "sourceProject": "AIMemoryBookCreator",
+        "path": "backend/routes/gap-comparison-highlight.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicRightsRoyaltyTracker",
-        "path": "server/routes/gap-metadata-cleaner.js:94",
+        "sourceProject": "AIMemoryBookCreator",
+        "path": "backend/routes/gap-email-sms.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicRightsRoyaltyTracker",
-        "path": "server/routes/gap-performance.js:94",
+        "sourceProject": "AIMemoryBookCreator",
+        "path": "backend/routes/gap-generate-timeline.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicRightsRoyaltyTracker",
-        "path": "server/routes/gap-real-time.js:94",
+        "sourceProject": "AIMemoryBookCreator",
+        "path": "backend/routes/gap-granular.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicRightsRoyaltyTracker",
-        "path": "server/routes/gap-revenue-optimizer.js:94",
+        "sourceProject": "AIMemoryBookCreator",
+        "path": "backend/routes/gap-memory-search.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicRightsRoyaltyTracker",
-        "path": "server/routes/gap-sampling-detection.js:94",
+        "sourceProject": "AIMemoryBookCreator",
+        "path": "backend/routes/gap-mobile.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicRightsRoyaltyTracker",
-        "path": "server/routes/gap-tax.js:94",
+        "sourceProject": "AIMemoryBookCreator",
+        "path": "backend/routes/gap-print-on-demand.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicRightsRoyaltyTracker",
-        "path": "server/routes/gap-webhooks.js:94",
+        "sourceProject": "AIMemoryBookCreator",
+        "path": "backend/routes/gap-relationship-mapper.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicRightsRoyaltyTracker",
-        "path": "server/routes/plagiarism-sampling-detect.js:94",
+        "sourceProject": "AIMemoryBookCreator",
+        "path": "backend/routes/gap-video.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicRightsRoyaltyTracker",
-        "path": "server/routes/rights-clearance-agent.js:94",
+        "sourceProject": "AIMemoryBookCreator",
+        "path": "backend/routes/gap-webhooks.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicRightsRoyaltyTracker",
-        "path": "server/routes/royalty-optimizer-stream.js:94",
+        "sourceProject": "AIMemoryBookCreator",
+        "path": "backend/routes/life-story-interviewer.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicSchoolAcademyManager",
-        "path": "backend/src/routes/digital-recital-platform.js:94",
+        "sourceProject": "AIMemoryBookCreator",
+        "path": "backend/routes/memory-book-marketplace.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicSchoolAcademyManager",
-        "path": "backend/src/routes/engagement-agent.js:94",
+        "sourceProject": "AIMemoryBookCreator",
+        "path": "backend/routes/text-to-video-stream.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicSchoolAcademyManager",
-        "path": "backend/src/routes/ensemble-autonomous.js:94",
+        "sourceProject": "AIMemoryBookCreator",
+        "path": "backend/routes/vision-memory-enhance.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicSchoolAcademyManager",
-        "path": "backend/src/routes/gap-copyright-managed.js:94",
-        "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "sourceProject": "AIPodcastProducer",
+        "path": "backend/governance/routerFactory.js:136",
+        "route": "/cases/:id/history",
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicSchoolAcademyManager",
-        "path": "backend/src/routes/gap-ensemble-assignment.js:94",
+        "sourceProject": "AIPodcastProducer",
+        "path": "backend/routes/ai.js:855",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicSchoolAcademyManager",
-        "path": "backend/src/routes/gap-event-promotion.js:94",
+        "sourceProject": "AIPodcastProducer",
+        "path": "backend/routes/customFeat01_AgenticEpisodeOrchestration.js:128",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicSchoolAcademyManager",
-        "path": "backend/src/routes/gap-live.js:94",
+        "sourceProject": "AIPodcastProducer",
+        "path": "backend/routes/customFeat02_RealTimeTranscriptionEditing.js:128",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicSchoolAcademyManager",
-        "path": "backend/src/routes/gap-native.js:94",
+        "sourceProject": "AIPodcastProducer",
+        "path": "backend/routes/customFeat03_AudienceIntelligence.js:128",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicSchoolAcademyManager",
-        "path": "backend/src/routes/gap-parent.js:94",
+        "sourceProject": "AIPodcastProducer",
+        "path": "backend/routes/customFeat04_GuestMatching.js:128",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicSchoolAcademyManager",
-        "path": "backend/src/routes/gap-retention-risk.js:94",
+        "sourceProject": "AIPodcastProducer",
+        "path": "backend/routes/customFeat05_MultiPlatformPublishingOrchestration.js:128",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicSchoolAcademyManager",
-        "path": "backend/src/routes/gap-student-matching.js:94",
+        "sourceProject": "AIPodcastProducer",
+        "path": "backend/routes/gapFeat_analytics_without_audience.js:99",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicSchoolAcademyManager",
-        "path": "backend/src/routes/gap-student.js:94",
+        "sourceProject": "AIPodcastProducer",
+        "path": "backend/routes/gapFeat_episodes_without_episode.js:99",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicSchoolAcademyManager",
-        "path": "backend/src/routes/gap-video.js:94",
+        "sourceProject": "AIPodcastProducer",
+        "path": "backend/routes/gapFeat_guests_without_guest.js:99",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicSchoolAcademyManager",
-        "path": "backend/src/routes/gap-webhooks.js:94",
+        "sourceProject": "AIPodcastProducer",
+        "path": "backend/routes/gapFeat_limited_analytics_listener_growth_retention.js:99",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicSchoolAcademyManager",
-        "path": "backend/src/routes/lesson-curator-agent.js:94",
+        "sourceProject": "AIPodcastProducer",
+        "path": "backend/routes/gapFeat_no_audience_management_email_lists_community.js:99",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMusicSchoolAcademyManager",
-        "path": "backend/src/routes/vision-practice-eval.js:94",
+        "sourceProject": "AIPodcastProducer",
+        "path": "backend/routes/gapFeat_no_audit_logging_grep_0.js:99",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AiImageGeneration",
-        "path": "backend/routes/agenticCreativeAssistant.js:85",
-        "route": "/history",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "navigation",
-        "sourceProject": "AiImageGeneration",
-        "path": "frontend/src/components/Sidebar.jsx:18",
-        "route": "",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AiImageGeneration",
-        "path": "frontend/src/App.jsx:102",
+        "sourceProject": "AIPodcastProducer",
+        "path": "backend/routes/gapFeat_no_file_upload_for_audio_masters.js:99",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
-        "kind": "page",
-        "sourceProject": "AiImageGeneration",
-        "path": "frontend/src/components/Sidebar.jsx:18",
+        "kind": "api",
+        "sourceProject": "AIPodcastProducer",
+        "path": "backend/routes/gapFeat_no_integration_with_podcast_hosts_buzzsprout_ancho.js:99",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
-        "kind": "page",
-        "sourceProject": "AiImageGeneration",
-        "path": "frontend/src/pages/Dashboard.jsx:8",
+        "kind": "api",
+        "sourceProject": "AIPodcastProducer",
+        "path": "backend/routes/gapFeat_no_integration_with_video_platforms_youtube.js:99",
         "route": "/history",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AiImageGeneration",
-        "path": "frontend/src/pages/History.jsx",
-        "route": "/History",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AiImageGeneration",
-        "path": "frontend/src/pages/HistoryDetail.jsx",
-        "route": "/HistoryDetail",
-        "originApp": "media-content-creative/music-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIVideoGeneration",
-        "path": "backend/routes/collaborationLayer.js:79",
+        "sourceProject": "AIPodcastProducer",
+        "path": "backend/routes/gapFeat_no_monetization_features_sponsorship_tracking_affi.js:99",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIVideoGeneration",
-        "path": "backend/routes/gapLimitedIntegrationWithStockVideoImageLibrariesOnly.js:71",
+        "sourceProject": "AIPodcastProducer",
+        "path": "backend/routes/gapFeat_no_notifications_module_grep_0.js:99",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIVideoGeneration",
-        "path": "backend/routes/gapNoAiDrivenStyleRecommendation.js:71",
+        "sourceProject": "AIPodcastProducer",
+        "path": "backend/routes/gapFeat_no_webhooks_for_episode_publish_events.js:99",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/comic-book-generator"
       },
       {
         "kind": "api",
-        "sourceProject": "AIVideoGeneration",
-        "path": "backend/routes/gapNoAiVoiceOverSynthesisEndpoint.js:71",
-        "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "sourceProject": "AIPlagiarismAIContentDetector",
+        "path": "server/index.js:69",
+        "route": "/api/ai/history",
+        "originApp": "media-content-creative/content-studio"
       },
       {
         "kind": "api",
-        "sourceProject": "AIVideoGeneration",
-        "path": "backend/routes/gapNoApprovalWorkflowForVideoReview.js:71",
+        "sourceProject": "AIPlagiarismAIContentDetector",
+        "path": "server/routes/customFeat01_AgenticPlagiarismMonitoring.js:127",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/content-studio"
       },
       {
         "kind": "api",
-        "sourceProject": "AIVideoGeneration",
-        "path": "backend/routes/gapNoCollaborationCommentingSystem.js:71",
+        "sourceProject": "AIPlagiarismAIContentDetector",
+        "path": "server/routes/customFeat02_AiGeneratedContentDetectionEnsemble.js:127",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/content-studio"
       },
       {
         "kind": "api",
-        "sourceProject": "AIVideoGeneration",
-        "path": "backend/routes/gapNoDirectPublishToPlatformIntegrationYoutubeTiktok.js:71",
+        "sourceProject": "AIPlagiarismAIContentDetector",
+        "path": "server/routes/customFeat03_ParaphraseDetection.js:127",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/content-studio"
       },
       {
         "kind": "api",
-        "sourceProject": "AIVideoGeneration",
-        "path": "backend/routes/gapNoMusicSoundGeneration.js:71",
+        "sourceProject": "AIPlagiarismAIContentDetector",
+        "path": "server/routes/customFeat04_WritingStyleFingerprinting.js:127",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/content-studio"
       },
       {
         "kind": "api",
-        "sourceProject": "AIVideoGeneration",
-        "path": "backend/routes/gapNoNotificationsSubsystem.js:71",
+        "sourceProject": "AIPlagiarismAIContentDetector",
+        "path": "server/routes/customFeat05_StudentWritingImprovement.js:127",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/content-studio"
       },
       {
         "kind": "api",
-        "sourceProject": "AIVideoGeneration",
-        "path": "backend/routes/gapNoWebhooksForRenderCompleteEvents.js:71",
+        "sourceProject": "AIPlagiarismAIContentDetector",
+        "path": "server/routes/gapFeat_existing_stub_files_aidetection_paraphrasedetectio.js:99",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/content-studio"
       },
       {
         "kind": "api",
-        "sourceProject": "AIVideoGeneration",
-        "path": "backend/routes/musicGeneration.js:79",
+        "sourceProject": "AIPlagiarismAIContentDetector",
+        "path": "server/routes/gapFeat_limited_analytics_trends_across_courses_cohorts.js:99",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/content-studio"
       },
       {
         "kind": "api",
-        "sourceProject": "AIVideoGeneration",
-        "path": "backend/routes/styleRecommendation.js:79",
+        "sourceProject": "AIPlagiarismAIContentDetector",
+        "path": "server/routes/gapFeat_no_cross.js:99",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/content-studio"
       },
       {
         "kind": "api",
-        "sourceProject": "AIVideoGeneration",
-        "path": "backend/routes/videoEditingSuggestions.js:79",
+        "sourceProject": "AIPlagiarismAIContentDetector",
+        "path": "server/routes/gapFeat_no_integration_with_turnitin_other_plagiarism_serv.js:99",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/content-studio"
       },
       {
         "kind": "api",
-        "sourceProject": "AIVideoGeneration",
-        "path": "backend/routes/viralScorePrediction.js:79",
+        "sourceProject": "AIPlagiarismAIContentDetector",
+        "path": "server/routes/gapFeat_no_notifications_module_grep_only_1.js:99",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/content-studio"
       },
       {
         "kind": "api",
-        "sourceProject": "AIVideoGeneration",
-        "path": "backend/routes/voiceOverSynthesis.js:79",
+        "sourceProject": "AIPlagiarismAIContentDetector",
+        "path": "server/routes/gapFeat_no_real_lms_integration_canvas_blackboard.js:99",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/content-studio"
       },
       {
         "kind": "api",
-        "sourceProject": "AIVideoIntelligence",
-        "path": "backend/routes/gapAiCoverageIsComprehensiveForTheDomain.js:71",
+        "sourceProject": "AIPlagiarismAIContentDetector",
+        "path": "server/routes/gapFeat_no_student_feedback_workflows.js:99",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/content-studio"
       },
       {
         "kind": "api",
-        "sourceProject": "AIVideoIntelligence",
-        "path": "backend/routes/gapNoDeepIntegrationWithSpecificVideoAnalyticsPlatforms.js:71",
+        "sourceProject": "AIPlagiarismAIContentDetector",
+        "path": "server/routes/gapFeat_no_style.js:99",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/content-studio"
       },
       {
         "kind": "api",
-        "sourceProject": "AIVideoIntelligence",
-        "path": "backend/routes/gapNoFormalComplianceReportingExport.js:71",
+        "sourceProject": "AIPlagiarismAIContentDetector",
+        "path": "server/routes/gapFeat_only_7_frontend_pages_for_16.js:99",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/content-studio"
       },
       {
         "kind": "api",
-        "sourceProject": "AIVideoIntelligence",
-        "path": "backend/routes/gapNoMultiSiteRegionalManagement.js:71",
+        "sourceProject": "AIPlagiarismAIContentDetector",
+        "path": "server/routes/gapFeat_webhook_scaffolding_present_but_not_wired_end.js:99",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/content-studio"
       },
       {
         "kind": "api",
-        "sourceProject": "AIVideoIntelligence",
-        "path": "backend/routes/gapNoNotificationsSubsystemAlertsOnly.js:71",
+        "sourceProject": "AISEOContentWriter",
+        "path": "server/routes/ai-content-writer.js:73",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/content-studio"
       },
       {
         "kind": "api",
-        "sourceProject": "AIVideoIntelligence",
-        "path": "backend/routes/gapNoSiemSplunkArcsightConnector.js:71",
+        "sourceProject": "AIADAWebsiteAccessibilityRemediator",
+        "path": "server/routes/ai.js:628",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/esports-performance-analyzer"
       },
       {
         "kind": "api",
-        "sourceProject": "AIVideoIntelligence",
-        "path": "backend/routes/gapNoVisionVideoFrameMlAnalysisFocusedOn.js:71",
+        "sourceProject": "AIADAWebsiteAccessibilityRemediator",
+        "path": "server/routes/browserExtension.js:33",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/esports-performance-analyzer"
       },
       {
         "kind": "api",
-        "sourceProject": "AIVideoTestimonialCreator",
-        "path": "backend/routes/gapAiIsActuallySubstantial18EndpointsTsvClaim.js:71",
+        "sourceProject": "AIADAWebsiteAccessibilityRemediator",
+        "path": "server/routes/designPlugin.js:33",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/esports-performance-analyzer"
       },
       {
         "kind": "api",
-        "sourceProject": "AIVideoTestimonialCreator",
-        "path": "backend/routes/gapLimitedMultiApproverWorkflowSingleApprovalsRoute.js:71",
+        "sourceProject": "AIADAWebsiteAccessibilityRemediator",
+        "path": "server/routes/htmlRewriter.js:33",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/esports-performance-analyzer"
       },
       {
         "kind": "api",
-        "sourceProject": "AIVideoTestimonialCreator",
-        "path": "backend/routes/gapNoCollaborationCommentingOnDraftTestimonials.js:71",
+        "sourceProject": "AIADAWebsiteAccessibilityRemediator",
+        "path": "server/routes/vpatGenerator.js:33",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/esports-performance-analyzer"
       },
       {
         "kind": "api",
-        "sourceProject": "AIVideoTestimonialCreator",
-        "path": "backend/routes/gapNoMultiTenantWhiteLabelSupport.js:71",
+        "sourceProject": "AIPharmaTrialDesigner",
+        "path": "backend/routes/ai.js:1098",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/esports-performance-analyzer"
       },
       {
         "kind": "api",
-        "sourceProject": "AIVideoTestimonialCreator",
-        "path": "backend/routes/gapNoNativeLinkedinTiktokPublishing.js:71",
+        "sourceProject": "AIBoardGameTTRPGGameMaster",
+        "path": "backend/src/routes/ai.js:148",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/game-balancing-playtesting-agent"
       },
       {
         "kind": "api",
-        "sourceProject": "AIVideoTestimonialCreator",
-        "path": "backend/routes/gapNoRealTimeRecordingCoachDuringCapture.js:71",
+        "sourceProject": "AIBoardGameTTRPGGameMaster",
+        "path": "backend/src/routes/gap_frontend_pages_folder_is_empty_no_spa_ui_shipped.js:134",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/game-balancing-playtesting-agent"
       },
       {
         "kind": "api",
-        "sourceProject": "AIVideoTestimonialCreator",
-        "path": "backend/routes/gapNoVisionBasedBodyLanguageAnalysisBeyondEmotion.js:71",
+        "sourceProject": "AIBoardGameTTRPGGameMaster",
+        "path": "backend/src/routes/gap_no_ai_map_dungeon_image_generation.js:134",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/game-balancing-playtesting-agent"
       },
       {
         "kind": "api",
-        "sourceProject": "AIVideoTestimonialCreator",
-        "path": "backend/routes/gapNoWebhookNotificationsForApprovalStateChanges.js:71",
+        "sourceProject": "AIBoardGameTTRPGGameMaster",
+        "path": "backend/src/routes/gap_no_ai_npc_voice_generation_tts.js:134",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/game-balancing-playtesting-agent"
       },
       {
         "kind": "api",
-        "sourceProject": "AiVideoScriptContent",
-        "path": "backend/src/routes/gapLimitedPlatformApiIntegrationYoutubeTiktokInstagramBeyondStub.ts:71",
+        "sourceProject": "AIBoardGameTTRPGGameMaster",
+        "path": "backend/src/routes/gap_no_ai_rules_arbitration_co_pilot_during_play.js:134",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/game-balancing-playtesting-agent"
       },
       {
         "kind": "api",
-        "sourceProject": "AiVideoScriptContent",
-        "path": "backend/src/routes/gapNoABTestingFramework.ts:71",
+        "sourceProject": "AIBoardGameTTRPGGameMaster",
+        "path": "backend/src/routes/gap_no_ai_session_recap_summarization.js:134",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/game-balancing-playtesting-agent"
       },
       {
         "kind": "api",
-        "sourceProject": "AiVideoScriptContent",
-        "path": "backend/src/routes/gapNoBulkContentSchedulingPublishing.ts:71",
+        "sourceProject": "AIBoardGameTTRPGGameMaster",
+        "path": "backend/src/routes/gap_no_discord_voice_chat_integration.js:134",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/game-balancing-playtesting-agent"
       },
       {
         "kind": "api",
-        "sourceProject": "AiVideoScriptContent",
-        "path": "backend/src/routes/gapNoCollaborationCommentingOnScripts.ts:71",
+        "sourceProject": "AIBoardGameTTRPGGameMaster",
+        "path": "backend/src/routes/gap_no_export_of_campaign_archives_pdf_json.js:134",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/game-balancing-playtesting-agent"
       },
       {
         "kind": "api",
-        "sourceProject": "AiVideoScriptContent",
-        "path": "backend/src/routes/gapNoMultimodalScriptToStoryboardGenerator.ts:71",
+        "sourceProject": "AIBoardGameTTRPGGameMaster",
+        "path": "backend/src/routes/gap_no_notification_system_for_session_reminders.js:134",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/game-balancing-playtesting-agent"
       },
       {
         "kind": "api",
-        "sourceProject": "AiVideoScriptContent",
-        "path": "backend/src/routes/gapNoPerformanceAnalyticsDashboard.ts:71",
+        "sourceProject": "AIBoardGameTTRPGGameMaster",
+        "path": "backend/src/routes/gap_no_player_marketplace_for_homebrew_content.js:134",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/game-balancing-playtesting-agent"
       },
       {
         "kind": "api",
-        "sourceProject": "AiVideoScriptContent",
-        "path": "backend/src/routes/gapNoVisionBasedThumbnailScoring.ts:71",
+        "sourceProject": "AIBoardGameTTRPGGameMaster",
+        "path": "backend/src/routes/gap_no_virtual_tabletop_vtt_interactive_board.js:134",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/game-balancing-playtesting-agent"
       },
       {
         "kind": "api",
-        "sourceProject": "AiVideoScriptContent",
-        "path": "backend/src/routes/gapTsvReports0AiButRoutesSuggestUnderReported.ts:71",
+        "sourceProject": "AIBoardGameTTRPGGameMaster",
+        "path": "backend/src/routes/gap_no_webhook_outbound_api.js:134",
         "route": "/history",
-        "originApp": "media-content-creative/video-generation"
+        "originApp": "media-content-creative/game-balancing-playtesting-agent"
       },
       {
         "kind": "api",
@@ -4924,6 +4979,13 @@
         "sourceProject": "AIBrandVoiceConsistencyChecker",
         "path": "server/routes/gap_only_5_frontend_pages_workflow_ux_is_shallow_vs_22.js:134",
         "route": "/history",
+        "originApp": "media-content-creative/logo-brand-kit-generator"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AILocalizationTranslationAgency",
+        "path": "server/governance/routerFactory.js:136",
+        "route": "/cases/:id/history",
         "originApp": "media-content-creative/logo-brand-kit-generator"
       },
       {
@@ -5216,6 +5278,13 @@
       {
         "kind": "api",
         "sourceProject": "AiInteriorDesign",
+        "path": "backend/governance/routerFactory.js:154",
+        "route": "/cases/:id/history",
+        "originApp": "media-content-creative/logo-brand-kit-generator"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiInteriorDesign",
         "path": "backend/src/routes/ai.js:532",
         "route": "/history",
         "originApp": "media-content-creative/logo-brand-kit-generator"
@@ -5226,6 +5295,13 @@
         "path": "backend/src/routes/subscriptions.js:177",
         "route": "/history",
         "originApp": "media-content-creative/logo-brand-kit-generator"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIAdCopyCreativeGenerator",
+        "path": "backend/runtimeAcceptance.js:104",
+        "route": "/ai/history",
+        "originApp": "media-content-creative/marketing-copy-generator"
       },
       {
         "kind": "api",
@@ -5246,6 +5322,13 @@
         "sourceProject": "AIAdCopyCreativeGenerator",
         "path": "backend/src/routes/competitorMonitor.js:33",
         "route": "/history",
+        "originApp": "media-content-creative/marketing-copy-generator"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIAdCopyCreativeGenerator",
+        "path": "backend/src/routes/governedWorkflow.js:60",
+        "route": "/:id/history",
         "originApp": "media-content-creative/marketing-copy-generator"
       },
       {
@@ -5279,7 +5362,14 @@
       {
         "kind": "api",
         "sourceProject": "AINewsletterGenerator",
-        "path": "server/routes/ai.js:63",
+        "path": "server/governance/routerFactory.js:136",
+        "route": "/cases/:id/history",
+        "originApp": "media-content-creative/marketing-copy-generator"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AINewsletterGenerator",
+        "path": "server/routes/ai.js:68",
         "route": "/history",
         "originApp": "media-content-creative/marketing-copy-generator"
       },
@@ -5405,8 +5495,15 @@
       {
         "kind": "api",
         "sourceProject": "AISlideDeckGenerator",
-        "path": "backend/routes/ai-agentic-deck.js:77",
+        "path": "backend/routes/ai-agentic-deck.js:76",
         "route": "/history",
+        "originApp": "media-content-creative/marketing-copy-generator"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiMarketingCopyGenerator",
+        "path": "backend/governance/routerFactory.js:154",
+        "route": "/cases/:id/history",
         "originApp": "media-content-creative/marketing-copy-generator"
       },
       {
@@ -5544,745 +5641,423 @@
       },
       {
         "kind": "api",
-        "sourceProject": "AIPlagiarismAIContentDetector",
-        "path": "server/index.js:69",
-        "route": "/api/ai/history",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIPlagiarismAIContentDetector",
-        "path": "server/routes/customFeat01_AgenticPlagiarismMonitoring.js:127",
-        "route": "/history",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIPlagiarismAIContentDetector",
-        "path": "server/routes/customFeat02_AiGeneratedContentDetectionEnsemble.js:127",
-        "route": "/history",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIPlagiarismAIContentDetector",
-        "path": "server/routes/customFeat03_ParaphraseDetection.js:127",
-        "route": "/history",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIPlagiarismAIContentDetector",
-        "path": "server/routes/customFeat04_WritingStyleFingerprinting.js:127",
-        "route": "/history",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIPlagiarismAIContentDetector",
-        "path": "server/routes/customFeat05_StudentWritingImprovement.js:127",
-        "route": "/history",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIPlagiarismAIContentDetector",
-        "path": "server/routes/gapFeat_existing_stub_files_aidetection_paraphrasedetectio.js:99",
-        "route": "/history",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIPlagiarismAIContentDetector",
-        "path": "server/routes/gapFeat_limited_analytics_trends_across_courses_cohorts.js:99",
-        "route": "/history",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIPlagiarismAIContentDetector",
-        "path": "server/routes/gapFeat_no_cross.js:99",
-        "route": "/history",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIPlagiarismAIContentDetector",
-        "path": "server/routes/gapFeat_no_integration_with_turnitin_other_plagiarism_serv.js:99",
-        "route": "/history",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIPlagiarismAIContentDetector",
-        "path": "server/routes/gapFeat_no_notifications_module_grep_only_1.js:99",
-        "route": "/history",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIPlagiarismAIContentDetector",
-        "path": "server/routes/gapFeat_no_real_lms_integration_canvas_blackboard.js:99",
-        "route": "/history",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIPlagiarismAIContentDetector",
-        "path": "server/routes/gapFeat_no_student_feedback_workflows.js:99",
-        "route": "/history",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIPlagiarismAIContentDetector",
-        "path": "server/routes/gapFeat_no_style.js:99",
-        "route": "/history",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIPlagiarismAIContentDetector",
-        "path": "server/routes/gapFeat_only_7_frontend_pages_for_16.js:99",
-        "route": "/history",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIPlagiarismAIContentDetector",
-        "path": "server/routes/gapFeat_webhook_scaffolding_present_but_not_wired_end.js:99",
-        "route": "/history",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AISEOContentWriter",
-        "path": "server/routes/ai-content-writer.js:73",
-        "route": "/history",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIPromptEngineeringStudio",
-        "path": "backend/routes/ai-regression-test.js:97",
-        "route": "/history",
-        "originApp": "media-content-creative/voice-forge"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiSplitVideos",
-        "path": "backend/src/routes/autoChaptering.js:79",
-        "route": "/history",
-        "originApp": "media-content-creative/voice-forge"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiSplitVideos",
-        "path": "backend/src/routes/batchProcessingAgent.js:79",
-        "route": "/history",
-        "originApp": "media-content-creative/voice-forge"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiSplitVideos",
-        "path": "backend/src/routes/formatClipOptimizer.js:79",
-        "route": "/history",
-        "originApp": "media-content-creative/voice-forge"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiSplitVideos",
-        "path": "backend/src/routes/gapAiSurfaceAreaIsModest6EndpointsRelative.js:71",
-        "route": "/history",
-        "originApp": "media-content-creative/voice-forge"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiSplitVideos",
-        "path": "backend/src/routes/gapNoAiDrivenHighlightDetectionEndpointFrontendStubExists.js:71",
-        "route": "/history",
-        "originApp": "media-content-creative/voice-forge"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiSplitVideos",
-        "path": "backend/src/routes/gapNoAiPoweredSubtitleCaptionOptimizationEndpoint.js:71",
-        "route": "/history",
-        "originApp": "media-content-creative/voice-forge"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiSplitVideos",
-        "path": "backend/src/routes/gapNoAiSceneChangeDetectionBackend.js:71",
-        "route": "/history",
-        "originApp": "media-content-creative/voice-forge"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiSplitVideos",
-        "path": "backend/src/routes/gapNoIntegrationsWithYoutubeTiktokInstagramForDirect.js:71",
-        "route": "/history",
-        "originApp": "media-content-creative/voice-forge"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiSplitVideos",
-        "path": "backend/src/routes/gapNoPublicApiForThirdPartyIntegrations.js:71",
-        "route": "/history",
-        "originApp": "media-content-creative/voice-forge"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiSplitVideos",
-        "path": "backend/src/routes/gapNoSubtitleCaptionEditingUiInBackend.js:71",
-        "route": "/history",
-        "originApp": "media-content-creative/voice-forge"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiSplitVideos",
-        "path": "backend/src/routes/gapNoWatermarkingOrBrandingControls.js:71",
-        "route": "/history",
-        "originApp": "media-content-creative/voice-forge"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiSplitVideos",
-        "path": "backend/src/routes/gapNoWebhooksForJobCompletionNotifications.js:71",
-        "route": "/history",
-        "originApp": "media-content-creative/voice-forge"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiSplitVideos",
-        "path": "backend/src/routes/publisherIntegrations.js:79",
-        "route": "/history",
-        "originApp": "media-content-creative/voice-forge"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiSplitVideos",
-        "path": "backend/src/routes/search.js:65",
-        "route": "/history",
-        "originApp": "media-content-creative/voice-forge"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiSplitVideos",
-        "path": "backend/src/routes/speakerDiarization.js:79",
-        "route": "/history",
-        "originApp": "media-content-creative/voice-forge"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiSplitVideos",
-        "path": "backend/src/routes/viralMomentDetection.js:79",
-        "route": "/history",
-        "originApp": "media-content-creative/voice-forge"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIBoardGameTTRPGGameMaster",
-        "path": "backend/src/routes/ai.js:148",
-        "route": "/history",
-        "originApp": "media-content-creative/game-balancing-playtesting-agent"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIBoardGameTTRPGGameMaster",
-        "path": "backend/src/routes/gap_frontend_pages_folder_is_empty_no_spa_ui_shipped.js:134",
-        "route": "/history",
-        "originApp": "media-content-creative/game-balancing-playtesting-agent"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIBoardGameTTRPGGameMaster",
-        "path": "backend/src/routes/gap_no_ai_map_dungeon_image_generation.js:134",
-        "route": "/history",
-        "originApp": "media-content-creative/game-balancing-playtesting-agent"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIBoardGameTTRPGGameMaster",
-        "path": "backend/src/routes/gap_no_ai_npc_voice_generation_tts.js:134",
-        "route": "/history",
-        "originApp": "media-content-creative/game-balancing-playtesting-agent"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIBoardGameTTRPGGameMaster",
-        "path": "backend/src/routes/gap_no_ai_rules_arbitration_co_pilot_during_play.js:134",
-        "route": "/history",
-        "originApp": "media-content-creative/game-balancing-playtesting-agent"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIBoardGameTTRPGGameMaster",
-        "path": "backend/src/routes/gap_no_ai_session_recap_summarization.js:134",
-        "route": "/history",
-        "originApp": "media-content-creative/game-balancing-playtesting-agent"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIBoardGameTTRPGGameMaster",
-        "path": "backend/src/routes/gap_no_discord_voice_chat_integration.js:134",
-        "route": "/history",
-        "originApp": "media-content-creative/game-balancing-playtesting-agent"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIBoardGameTTRPGGameMaster",
-        "path": "backend/src/routes/gap_no_export_of_campaign_archives_pdf_json.js:134",
-        "route": "/history",
-        "originApp": "media-content-creative/game-balancing-playtesting-agent"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIBoardGameTTRPGGameMaster",
-        "path": "backend/src/routes/gap_no_notification_system_for_session_reminders.js:134",
-        "route": "/history",
-        "originApp": "media-content-creative/game-balancing-playtesting-agent"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIBoardGameTTRPGGameMaster",
-        "path": "backend/src/routes/gap_no_player_marketplace_for_homebrew_content.js:134",
-        "route": "/history",
-        "originApp": "media-content-creative/game-balancing-playtesting-agent"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIBoardGameTTRPGGameMaster",
-        "path": "backend/src/routes/gap_no_virtual_tabletop_vtt_interactive_board.js:134",
-        "route": "/history",
-        "originApp": "media-content-creative/game-balancing-playtesting-agent"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIBoardGameTTRPGGameMaster",
-        "path": "backend/src/routes/gap_no_webhook_outbound_api.js:134",
-        "route": "/history",
-        "originApp": "media-content-creative/game-balancing-playtesting-agent"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIADAWebsiteAccessibilityRemediator",
-        "path": "server/routes/ai.js:628",
+        "sourceProject": "AIMusicGeneration",
+        "path": "server/routes/artist-collab-platform.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/esports-performance-analyzer"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIADAWebsiteAccessibilityRemediator",
-        "path": "server/routes/browserExtension.js:33",
+        "sourceProject": "AIMusicGeneration",
+        "path": "server/routes/daw-copilot.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/esports-performance-analyzer"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIADAWebsiteAccessibilityRemediator",
-        "path": "server/routes/designPlugin.js:33",
+        "sourceProject": "AIMusicGeneration",
+        "path": "server/routes/gap-ai-audio-stem-separator.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/esports-performance-analyzer"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIADAWebsiteAccessibilityRemediator",
-        "path": "server/routes/htmlRewriter.js:33",
+        "sourceProject": "AIMusicGeneration",
+        "path": "server/routes/gap-ai-cover-art-generator.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/esports-performance-analyzer"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIADAWebsiteAccessibilityRemediator",
-        "path": "server/routes/vpatGenerator.js:33",
+        "sourceProject": "AIMusicGeneration",
+        "path": "server/routes/gap-ai-mastering-engineer.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/esports-performance-analyzer"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIPharmaTrialDesigner",
-        "path": "backend/routes/ai.js:1098",
+        "sourceProject": "AIMusicGeneration",
+        "path": "server/routes/gap-ai-vocal-melody-cloner.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/esports-performance-analyzer"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIBookPublishingPipeline",
-        "path": "backend/routes/gap_no_ai_fraud_piracy_scanning_across_retailers.js:134",
+        "sourceProject": "AIMusicGeneration",
+        "path": "server/routes/gap-audio.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIBookPublishingPipeline",
-        "path": "backend/routes/gap_no_ai_sales_channel_reconciliation.js:134",
+        "sourceProject": "AIMusicGeneration",
+        "path": "server/routes/gap-collaboration.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIBookPublishingPipeline",
-        "path": "backend/routes/gap_no_ai_voiceover_audiobook_generation_pipeline.js:134",
+        "sourceProject": "AIMusicGeneration",
+        "path": "server/routes/gap-community.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIBookPublishingPipeline",
-        "path": "backend/routes/gap_no_bookseller_retailer_crm_module.js:134",
+        "sourceProject": "AIMusicGeneration",
+        "path": "server/routes/gap-daw.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIBookPublishingPipeline",
-        "path": "backend/routes/gap_no_direct_ingramspark_kdp_api_client_integrations_.js:134",
+        "sourceProject": "AIMusicGeneration",
+        "path": "server/routes/gap-distribution.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIBookPublishingPipeline",
-        "path": "backend/routes/gap_no_e_book_conversion_pipeline_epub_mobi_pdf.js:134",
+        "sourceProject": "AIMusicGeneration",
+        "path": "server/routes/gap-limited.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIBookPublishingPipeline",
-        "path": "backend/routes/gap_no_image_generation_for_marketing_assets_covers.js:134",
+        "sourceProject": "AIMusicGeneration",
+        "path": "server/routes/gap-music.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIBookPublishingPipeline",
-        "path": "backend/routes/gap_no_print_run_cost_calculator.js:134",
+        "sourceProject": "AIMusicGeneration",
+        "path": "server/routes/gap-royalty.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIBookPublishingPipeline",
-        "path": "backend/routes/gap_notification_routes_exist_but_no_actual_sms_email_.js:134",
+        "sourceProject": "AIMusicGeneration",
+        "path": "server/routes/music-composer-agent.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIComicBookGenerator",
-        "path": "server/routes/gap_no_actual_image_generation_pipeline_only_text_endp.js:134",
+        "sourceProject": "AIMusicGeneration",
+        "path": "server/routes/producer-vertical-pack.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIComicBookGenerator",
-        "path": "server/routes/gap_no_ai_character_consistency_across_panels.js:134",
+        "sourceProject": "AIMusicGeneration",
+        "path": "server/routes/remix-agent.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIComicBookGenerator",
-        "path": "server/routes/gap_no_ai_lettering_speech_bubble_auto_layout.js:134",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "server/routes/artist-earnings-intel.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIComicBookGenerator",
-        "path": "server/routes/gap_no_ai_page_flow_pacing_recommender.js:134",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "server/routes/catalog-acquisition-advisor.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIComicBookGenerator",
-        "path": "server/routes/gap_no_collaboration_writer_artist_workflow.js:134",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "server/routes/gap-artist.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIComicBookGenerator",
-        "path": "server/routes/gap_no_commenting_or_beta_reader_feedback_loop.js:134",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "server/routes/gap-copyright.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIComicBookGenerator",
-        "path": "server/routes/gap_no_export_to_cbz_pdf_epub_or_print_ready_pdf.js:134",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "server/routes/gap-dispute.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIComicBookGenerator",
-        "path": "server/routes/gap_no_marketplace_publishing_layer.js:134",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "server/routes/gap-licensing-recommender.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIComicBookGenerator",
-        "path": "server/routes/gap_no_notification_system_or_webhook_outbound.js:134",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "server/routes/gap-mechanical.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIComicBookGenerator",
-        "path": "server/routes/gap_only_5_backend_routes_and_5_frontend_pages_thin_do.js:134",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "server/routes/gap-metadata-cleaner.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMemoryBookCreator",
-        "path": "backend/routes/family-legacy-workflow.js:94",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "server/routes/gap-performance.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMemoryBookCreator",
-        "path": "backend/routes/gap-audio.js:94",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "server/routes/gap-real-time.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMemoryBookCreator",
-        "path": "backend/routes/gap-collaborative.js:94",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "server/routes/gap-revenue-optimizer.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMemoryBookCreator",
-        "path": "backend/routes/gap-comparison-highlight.js:94",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "server/routes/gap-sampling-detection.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMemoryBookCreator",
-        "path": "backend/routes/gap-email-sms.js:94",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "server/routes/gap-tax.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMemoryBookCreator",
-        "path": "backend/routes/gap-generate-timeline.js:94",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "server/routes/gap-webhooks.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMemoryBookCreator",
-        "path": "backend/routes/gap-granular.js:94",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "server/routes/plagiarism-sampling-detect.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMemoryBookCreator",
-        "path": "backend/routes/gap-memory-search.js:94",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "server/routes/rights-clearance-agent.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMemoryBookCreator",
-        "path": "backend/routes/gap-mobile.js:94",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "server/routes/royalty-optimizer-stream.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMemoryBookCreator",
-        "path": "backend/routes/gap-print-on-demand.js:94",
-        "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "backend/src/governance/routerFactory.js:136",
+        "route": "/cases/:id/history",
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMemoryBookCreator",
-        "path": "backend/routes/gap-relationship-mapper.js:94",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "backend/src/routes/digital-recital-platform.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMemoryBookCreator",
-        "path": "backend/routes/gap-video.js:94",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "backend/src/routes/engagement-agent.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMemoryBookCreator",
-        "path": "backend/routes/gap-webhooks.js:94",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "backend/src/routes/ensemble-autonomous.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMemoryBookCreator",
-        "path": "backend/routes/life-story-interviewer.js:94",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "backend/src/routes/gap-copyright-managed.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMemoryBookCreator",
-        "path": "backend/routes/memory-book-marketplace.js:94",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "backend/src/routes/gap-ensemble-assignment.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMemoryBookCreator",
-        "path": "backend/routes/text-to-video-stream.js:94",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "backend/src/routes/gap-event-promotion.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIMemoryBookCreator",
-        "path": "backend/routes/vision-memory-enhance.js:94",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "backend/src/routes/gap-live.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIPodcastProducer",
-        "path": "backend/routes/ai.js:875",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "backend/src/routes/gap-native.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIPodcastProducer",
-        "path": "backend/routes/customFeat01_AgenticEpisodeOrchestration.js:128",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "backend/src/routes/gap-parent.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIPodcastProducer",
-        "path": "backend/routes/customFeat02_RealTimeTranscriptionEditing.js:128",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "backend/src/routes/gap-retention-risk.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIPodcastProducer",
-        "path": "backend/routes/customFeat03_AudienceIntelligence.js:128",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "backend/src/routes/gap-student-matching.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIPodcastProducer",
-        "path": "backend/routes/customFeat04_GuestMatching.js:128",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "backend/src/routes/gap-student.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIPodcastProducer",
-        "path": "backend/routes/customFeat05_MultiPlatformPublishingOrchestration.js:128",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "backend/src/routes/gap-video.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIPodcastProducer",
-        "path": "backend/routes/gapFeat_analytics_without_audience.js:99",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "backend/src/routes/gap-webhooks.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIPodcastProducer",
-        "path": "backend/routes/gapFeat_episodes_without_episode.js:99",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "backend/src/routes/lesson-curator-agent.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIPodcastProducer",
-        "path": "backend/routes/gapFeat_guests_without_guest.js:99",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "backend/src/routes/vision-practice-eval.js:94",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIPodcastProducer",
-        "path": "backend/routes/gapFeat_limited_analytics_listener_growth_retention.js:99",
-        "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "sourceProject": "AiImageGeneration",
+        "path": "backend/governance/routerFactory.js:154",
+        "route": "/cases/:id/history",
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIPodcastProducer",
-        "path": "backend/routes/gapFeat_no_audience_management_email_lists_community.js:99",
+        "sourceProject": "AiImageGeneration",
+        "path": "backend/routes/agenticCreativeAssistant.js:85",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
-        "sourceProject": "AIPodcastProducer",
-        "path": "backend/routes/gapFeat_no_audit_logging_grep_0.js:99",
+        "sourceProject": "AiImageGeneration",
+        "path": "backend/routes/runtimeAi.js:4",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
-        "kind": "api",
-        "sourceProject": "AIPodcastProducer",
-        "path": "backend/routes/gapFeat_no_file_upload_for_audio_masters.js:99",
-        "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "kind": "navigation",
+        "sourceProject": "AiImageGeneration",
+        "path": "frontend/src/components/Sidebar.jsx:18",
+        "route": "",
+        "originApp": "media-content-creative/music-generation"
       },
       {
-        "kind": "api",
-        "sourceProject": "AIPodcastProducer",
-        "path": "backend/routes/gapFeat_no_integration_with_podcast_hosts_buzzsprout_ancho.js:99",
+        "kind": "page",
+        "sourceProject": "AiImageGeneration",
+        "path": "frontend/src/App.jsx:102",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
-        "kind": "api",
-        "sourceProject": "AIPodcastProducer",
-        "path": "backend/routes/gapFeat_no_integration_with_video_platforms_youtube.js:99",
+        "kind": "page",
+        "sourceProject": "AiImageGeneration",
+        "path": "frontend/src/components/Sidebar.jsx:18",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
-        "kind": "api",
-        "sourceProject": "AIPodcastProducer",
-        "path": "backend/routes/gapFeat_no_monetization_features_sponsorship_tracking_affi.js:99",
+        "kind": "page",
+        "sourceProject": "AiImageGeneration",
+        "path": "frontend/src/pages/Dashboard.jsx:8",
         "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "originApp": "media-content-creative/music-generation"
       },
       {
-        "kind": "api",
-        "sourceProject": "AIPodcastProducer",
-        "path": "backend/routes/gapFeat_no_notifications_module_grep_0.js:99",
-        "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "kind": "page",
+        "sourceProject": "AiImageGeneration",
+        "path": "frontend/src/pages/History.jsx",
+        "route": "/History",
+        "originApp": "media-content-creative/music-generation"
       },
       {
-        "kind": "api",
-        "sourceProject": "AIPodcastProducer",
-        "path": "backend/routes/gapFeat_no_webhooks_for_episode_publish_events.js:99",
-        "route": "/history",
-        "originApp": "media-content-creative/comic-book-generator"
+        "kind": "page",
+        "sourceProject": "AiImageGeneration",
+        "path": "frontend/src/pages/HistoryDetail.jsx",
+        "route": "/HistoryDetail",
+        "originApp": "media-content-creative/music-generation"
       },
       {
         "kind": "api",
@@ -6401,6 +6176,13 @@
         "sourceProject": "AIMuseumCulturalInstitutionManager",
         "path": "backend/routes/visitor-journey-agent.js:92",
         "route": "/history",
+        "originApp": "media-content-creative/social-media-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AINewsroomAssistant",
+        "path": "backend/src/governance/routerFactory.js:136",
+        "route": "/cases/:id/history",
         "originApp": "media-content-creative/social-media-manager"
       },
       {
@@ -6539,6 +6321,13 @@
       {
         "kind": "api",
         "sourceProject": "AITheaterPerformingArtsManager",
+        "path": "backend/governance/routerFactory.js:154",
+        "route": "/cases/:id/history",
+        "originApp": "media-content-creative/social-media-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AITheaterPerformingArtsManager",
         "path": "backend/routes/communityPartnershipMatcher.js:79",
         "route": "/history",
         "originApp": "media-content-creative/social-media-manager"
@@ -6657,6 +6446,419 @@
       },
       {
         "kind": "api",
+        "sourceProject": "AIVideoGeneration",
+        "path": "backend/routes/collaborationLayer.js:79",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIVideoGeneration",
+        "path": "backend/routes/gapLimitedIntegrationWithStockVideoImageLibrariesOnly.js:71",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIVideoGeneration",
+        "path": "backend/routes/gapNoAiDrivenStyleRecommendation.js:71",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIVideoGeneration",
+        "path": "backend/routes/gapNoAiVoiceOverSynthesisEndpoint.js:71",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIVideoGeneration",
+        "path": "backend/routes/gapNoApprovalWorkflowForVideoReview.js:71",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIVideoGeneration",
+        "path": "backend/routes/gapNoCollaborationCommentingSystem.js:71",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIVideoGeneration",
+        "path": "backend/routes/gapNoDirectPublishToPlatformIntegrationYoutubeTiktok.js:71",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIVideoGeneration",
+        "path": "backend/routes/gapNoMusicSoundGeneration.js:71",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIVideoGeneration",
+        "path": "backend/routes/gapNoNotificationsSubsystem.js:71",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIVideoGeneration",
+        "path": "backend/routes/gapNoWebhooksForRenderCompleteEvents.js:71",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIVideoGeneration",
+        "path": "backend/routes/musicGeneration.js:79",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIVideoGeneration",
+        "path": "backend/routes/styleRecommendation.js:79",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIVideoGeneration",
+        "path": "backend/routes/videoEditingSuggestions.js:79",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIVideoGeneration",
+        "path": "backend/routes/viralScorePrediction.js:79",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIVideoGeneration",
+        "path": "backend/routes/voiceOverSynthesis.js:79",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIVideoIntelligence",
+        "path": "backend/routes/gapAiCoverageIsComprehensiveForTheDomain.js:71",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIVideoIntelligence",
+        "path": "backend/routes/gapNoDeepIntegrationWithSpecificVideoAnalyticsPlatforms.js:71",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIVideoIntelligence",
+        "path": "backend/routes/gapNoFormalComplianceReportingExport.js:71",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIVideoIntelligence",
+        "path": "backend/routes/gapNoMultiSiteRegionalManagement.js:71",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIVideoIntelligence",
+        "path": "backend/routes/gapNoNotificationsSubsystemAlertsOnly.js:71",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIVideoIntelligence",
+        "path": "backend/routes/gapNoSiemSplunkArcsightConnector.js:71",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIVideoIntelligence",
+        "path": "backend/routes/gapNoVisionVideoFrameMlAnalysisFocusedOn.js:71",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIVideoTestimonialCreator",
+        "path": "backend/routes/gapAiIsActuallySubstantial18EndpointsTsvClaim.js:71",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIVideoTestimonialCreator",
+        "path": "backend/routes/gapLimitedMultiApproverWorkflowSingleApprovalsRoute.js:71",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIVideoTestimonialCreator",
+        "path": "backend/routes/gapNoCollaborationCommentingOnDraftTestimonials.js:71",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIVideoTestimonialCreator",
+        "path": "backend/routes/gapNoMultiTenantWhiteLabelSupport.js:71",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIVideoTestimonialCreator",
+        "path": "backend/routes/gapNoNativeLinkedinTiktokPublishing.js:71",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIVideoTestimonialCreator",
+        "path": "backend/routes/gapNoRealTimeRecordingCoachDuringCapture.js:71",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIVideoTestimonialCreator",
+        "path": "backend/routes/gapNoVisionBasedBodyLanguageAnalysisBeyondEmotion.js:71",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIVideoTestimonialCreator",
+        "path": "backend/routes/gapNoWebhookNotificationsForApprovalStateChanges.js:71",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIVideoTestimonialCreator",
+        "path": "backend/routes/runtimeAi.js:23",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiVideoScriptContent",
+        "path": "backend/src/routes/gapLimitedPlatformApiIntegrationYoutubeTiktokInstagramBeyondStub.ts:71",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiVideoScriptContent",
+        "path": "backend/src/routes/gapNoABTestingFramework.ts:71",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiVideoScriptContent",
+        "path": "backend/src/routes/gapNoBulkContentSchedulingPublishing.ts:71",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiVideoScriptContent",
+        "path": "backend/src/routes/gapNoCollaborationCommentingOnScripts.ts:71",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiVideoScriptContent",
+        "path": "backend/src/routes/gapNoMultimodalScriptToStoryboardGenerator.ts:71",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiVideoScriptContent",
+        "path": "backend/src/routes/gapNoPerformanceAnalyticsDashboard.ts:71",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiVideoScriptContent",
+        "path": "backend/src/routes/gapNoVisionBasedThumbnailScoring.ts:71",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiVideoScriptContent",
+        "path": "backend/src/routes/gapTsvReports0AiButRoutesSuggestUnderReported.ts:71",
+        "route": "/history",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIPromptEngineeringStudio",
+        "path": "backend/governance/routerFactory.js:136",
+        "route": "/cases/:id/history",
+        "originApp": "media-content-creative/voice-forge"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIPromptEngineeringStudio",
+        "path": "backend/routes/ai-regression-test.js:97",
+        "route": "/history",
+        "originApp": "media-content-creative/voice-forge"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIPromptEngineeringStudio",
+        "path": "backend/routes/ai.js:85",
+        "route": "/history",
+        "originApp": "media-content-creative/voice-forge"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiSplitVideos",
+        "path": "backend/src/routes/autoChaptering.js:79",
+        "route": "/history",
+        "originApp": "media-content-creative/voice-forge"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiSplitVideos",
+        "path": "backend/src/routes/batchProcessingAgent.js:79",
+        "route": "/history",
+        "originApp": "media-content-creative/voice-forge"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiSplitVideos",
+        "path": "backend/src/routes/formatClipOptimizer.js:79",
+        "route": "/history",
+        "originApp": "media-content-creative/voice-forge"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiSplitVideos",
+        "path": "backend/src/routes/gapAiSurfaceAreaIsModest6EndpointsRelative.js:71",
+        "route": "/history",
+        "originApp": "media-content-creative/voice-forge"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiSplitVideos",
+        "path": "backend/src/routes/gapNoAiDrivenHighlightDetectionEndpointFrontendStubExists.js:71",
+        "route": "/history",
+        "originApp": "media-content-creative/voice-forge"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiSplitVideos",
+        "path": "backend/src/routes/gapNoAiPoweredSubtitleCaptionOptimizationEndpoint.js:71",
+        "route": "/history",
+        "originApp": "media-content-creative/voice-forge"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiSplitVideos",
+        "path": "backend/src/routes/gapNoAiSceneChangeDetectionBackend.js:71",
+        "route": "/history",
+        "originApp": "media-content-creative/voice-forge"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiSplitVideos",
+        "path": "backend/src/routes/gapNoIntegrationsWithYoutubeTiktokInstagramForDirect.js:71",
+        "route": "/history",
+        "originApp": "media-content-creative/voice-forge"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiSplitVideos",
+        "path": "backend/src/routes/gapNoPublicApiForThirdPartyIntegrations.js:71",
+        "route": "/history",
+        "originApp": "media-content-creative/voice-forge"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiSplitVideos",
+        "path": "backend/src/routes/gapNoSubtitleCaptionEditingUiInBackend.js:71",
+        "route": "/history",
+        "originApp": "media-content-creative/voice-forge"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiSplitVideos",
+        "path": "backend/src/routes/gapNoWatermarkingOrBrandingControls.js:71",
+        "route": "/history",
+        "originApp": "media-content-creative/voice-forge"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiSplitVideos",
+        "path": "backend/src/routes/gapNoWebhooksForJobCompletionNotifications.js:71",
+        "route": "/history",
+        "originApp": "media-content-creative/voice-forge"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiSplitVideos",
+        "path": "backend/src/routes/publisherIntegrations.js:79",
+        "route": "/history",
+        "originApp": "media-content-creative/voice-forge"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiSplitVideos",
+        "path": "backend/src/routes/search.js:65",
+        "route": "/history",
+        "originApp": "media-content-creative/voice-forge"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiSplitVideos",
+        "path": "backend/src/routes/speakerDiarization.js:79",
+        "route": "/history",
+        "originApp": "media-content-creative/voice-forge"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiSplitVideos",
+        "path": "backend/src/routes/viralMomentDetection.js:79",
+        "route": "/history",
+        "originApp": "media-content-creative/voice-forge"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIEventPlanner",
+        "path": "backend/routes/governedEventControl.js:7",
+        "route": "/:id/history",
+        "originApp": "media-content-creative/event-planner"
+      },
+      {
+        "kind": "api",
         "sourceProject": "AIRecommendationsforbroadcasters",
         "path": "backend/routes/ai-personalized-schedule.js:74",
         "route": "/history",
@@ -6771,6 +6973,13 @@
         "kind": "api",
         "sourceProject": "AISportsAnalytics",
         "path": "server/routes/socialLeaderboards.js:79",
+        "route": "/history",
+        "originApp": "media-content-creative/event-planner"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIVenueManager",
+        "path": "server/routes/ai.js:15",
         "route": "/history",
         "originApp": "media-content-creative/event-planner"
       },
@@ -7250,6 +7459,32 @@
     ]
   },
   {
+    "name": "Lock",
+    "canonicalKey": "lock",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/accounting-periods/:id/lock"
+    ],
+    "sourceProjects": [
+      "AIMusicRightsRoyaltyTracker"
+    ],
+    "consolidatedFromApps": [
+      "media-content-creative/music-generation"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "server/routes/governedRoyalties.js:125",
+        "route": "/accounting-periods/:id/lock",
+        "originApp": "media-content-creative/music-generation"
+      }
+    ]
+  },
+  {
     "name": "Main",
     "canonicalKey": "main",
     "aliases": [],
@@ -7496,6 +7731,13 @@
     "evidence": [
       {
         "kind": "api",
+        "sourceProject": "AIPlagiarismAIContentDetector",
+        "path": "server/routes/extensions.js:114",
+        "route": "/cohorts/:id/members",
+        "originApp": "media-content-creative/content-studio"
+      },
+      {
+        "kind": "api",
         "sourceProject": "AIMusicSchoolAcademyManager",
         "path": "backend/src/routes/ensembles.js:54",
         "route": "/:id/members",
@@ -7514,13 +7756,6 @@
         "path": "backend/src/routes/families.js:20",
         "route": "/:id/members",
         "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIPlagiarismAIContentDetector",
-        "path": "server/routes/extensions.js:114",
-        "route": "/cohorts/:id/members",
-        "originApp": "media-content-creative/content-studio"
       }
     ]
   },
@@ -7748,6 +7983,32 @@
     ]
   },
   {
+    "name": "Overrides",
+    "canonicalKey": "override",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/calculations/:id/overrides"
+    ],
+    "sourceProjects": [
+      "AIMusicRightsRoyaltyTracker"
+    ],
+    "consolidatedFromApps": [
+      "media-content-creative/music-generation"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "server/routes/governedRoyalties.js:262",
+        "route": "/calculations/:id/overrides",
+        "originApp": "media-content-creative/music-generation"
+      }
+    ]
+  },
+  {
     "name": "Parent Digest",
     "canonicalKey": "digest parent",
     "aliases": [],
@@ -7802,32 +8063,6 @@
         "sourceProject": "AIMusicSchoolAcademyManager",
         "path": "frontend/src/App.jsx:104",
         "route": "/ai/parent-summary",
-        "originApp": "media-content-creative/music-generation"
-      }
-    ]
-  },
-  {
-    "name": "Payments Page",
-    "canonicalKey": "payments",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/PaymentsPage"
-    ],
-    "sourceProjects": [
-      "AIMusicRightsRoyaltyTracker"
-    ],
-    "consolidatedFromApps": [
-      "media-content-creative/music-generation"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIMusicRightsRoyaltyTracker",
-        "path": "client/src/pages/PaymentsPage.js",
-        "route": "/PaymentsPage",
         "originApp": "media-content-creative/music-generation"
       }
     ]
@@ -7954,20 +8189,6 @@
     "evidence": [
       {
         "kind": "page",
-        "sourceProject": "AIMusicRightsRoyaltyTracker",
-        "path": "client/src/components/Layout.js:16",
-        "route": "/ai/plagiarism",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIMusicRightsRoyaltyTracker",
-        "path": "client/src/pages/Dashboard.js:13",
-        "route": "/ai/plagiarism",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "page",
         "sourceProject": "AiContentStudio",
         "path": "frontend/src/App.jsx:81",
         "route": "plagiarism",
@@ -7979,6 +8200,20 @@
         "path": "frontend/src/components/Layout.jsx:16",
         "route": "/plagiarism",
         "originApp": "media-content-creative/content-studio"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "client/src/components/Layout.js:16",
+        "route": "/ai/plagiarism",
+        "originApp": "media-content-creative/music-generation"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "client/src/pages/Dashboard.js:13",
+        "route": "/ai/plagiarism",
+        "originApp": "media-content-creative/music-generation"
       }
     ]
   },
@@ -8361,6 +8596,32 @@
     ]
   },
   {
+    "name": "Prompt Optimize",
+    "canonicalKey": "optimize prompt",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/prompt-optimize"
+    ],
+    "sourceProjects": [
+      "AiImageGeneration"
+    ],
+    "consolidatedFromApps": [
+      "media-content-creative/music-generation"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AiImageGeneration",
+        "path": "backend/routes/runtimeAi.js:5",
+        "route": "/prompt-optimize",
+        "originApp": "media-content-creative/music-generation"
+      }
+    ]
+  },
+  {
     "name": "Prompt Optimizer",
     "canonicalKey": "optimizer prompt",
     "aliases": [
@@ -8456,7 +8717,8 @@
     "name": "Prompts",
     "canonicalKey": "prompt",
     "aliases": [
-      "Prompt Detail"
+      "Prompt Detail",
+      "Prompts Page"
     ],
     "kinds": [
       "api",
@@ -8467,6 +8729,7 @@
       "/:id/prompts",
       "/PromptDetail",
       "/Prompts",
+      "/PromptsPage",
       "/ai/prompts",
       "/prompts"
     ],
@@ -8483,6 +8746,20 @@
       "media-content-creative/voice-forge"
     ],
     "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIMemoryBookCreator",
+        "path": "frontend/src/App.js:100",
+        "route": "/ai/prompts",
+        "originApp": "media-content-creative/comic-book-generator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIMemoryBookCreator",
+        "path": "frontend/src/pages/Dashboard.js:61",
+        "route": "/ai/prompts",
+        "originApp": "media-content-creative/comic-book-generator"
+      },
       {
         "kind": "page",
         "sourceProject": "AiImageGeneration",
@@ -8547,6 +8824,13 @@
         "originApp": "media-content-creative/video-generation"
       },
       {
+        "kind": "page",
+        "sourceProject": "AIVideoGeneration",
+        "path": "frontend/src/pages/PromptsPage.js",
+        "route": "/PromptsPage",
+        "originApp": "media-content-creative/video-generation"
+      },
+      {
         "kind": "api",
         "sourceProject": "AIPromptEngineeringStudio",
         "path": "backend/routes/folders.js:73",
@@ -8580,20 +8864,6 @@
         "path": "frontend/src/pages/Search.jsx:9",
         "route": "/prompts",
         "originApp": "media-content-creative/voice-forge"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIMemoryBookCreator",
-        "path": "frontend/src/App.js:100",
-        "route": "/ai/prompts",
-        "originApp": "media-content-creative/comic-book-generator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIMemoryBookCreator",
-        "path": "frontend/src/pages/Dashboard.js:62",
-        "route": "/ai/prompts",
-        "originApp": "media-content-creative/comic-book-generator"
       }
     ]
   },
@@ -8775,6 +9045,40 @@
     ]
   },
   {
+    "name": "Reconciliation",
+    "canonicalKey": "reconciliation",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/calculations/:id/reconciliations",
+      "/integrations/:provider/reconciliation"
+    ],
+    "sourceProjects": [
+      "AIMusicRightsRoyaltyTracker"
+    ],
+    "consolidatedFromApps": [
+      "media-content-creative/music-generation"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "server/routes/governedRoyalties.js:67",
+        "route": "/integrations/:provider/reconciliation",
+        "originApp": "media-content-creative/music-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "server/routes/governedRoyalties.js:440",
+        "route": "/calculations/:id/reconciliations",
+        "originApp": "media-content-creative/music-generation"
+      }
+    ]
+  },
+  {
     "name": "Remix Suggestion",
     "canonicalKey": "remix suggestion",
     "aliases": [],
@@ -8796,6 +9100,32 @@
         "sourceProject": "AIMusicGeneration",
         "path": "server/routes/songPipeline.js:132",
         "route": "/remix-suggestion",
+        "originApp": "media-content-creative/music-generation"
+      }
+    ]
+  },
+  {
+    "name": "Render Outcomes",
+    "canonicalKey": "outcome render",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/projects/:id/render-outcomes"
+    ],
+    "sourceProjects": [
+      "AIMusicGeneration"
+    ],
+    "consolidatedFromApps": [
+      "media-content-creative/music-generation"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIMusicGeneration",
+        "path": "server/routes/governedCreation.js:8",
+        "route": "/projects/:id/render-outcomes",
         "originApp": "media-content-creative/music-generation"
       }
     ]
@@ -8913,7 +9243,6 @@
     ],
     "sourceProjects": [
       "AIMusicSchoolAcademyManager",
-      "MontageForge",
       "VoiceForge"
     ],
     "consolidatedFromApps": [
@@ -8930,22 +9259,15 @@
       },
       {
         "kind": "api",
-        "sourceProject": "MontageForge",
-        "path": "backend/src/server.js:280",
+        "sourceProject": "VoiceForge",
+        "path": "backend/src/server.js:166",
         "route": "/api/:resource",
         "originApp": "media-content-creative/voice-forge"
       },
       {
         "kind": "api",
         "sourceProject": "VoiceForge",
-        "path": "backend/src/server.js:163",
-        "route": "/api/:resource",
-        "originApp": "media-content-creative/voice-forge"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "VoiceForge",
-        "path": "backend/src/server.js:170",
+        "path": "backend/src/server.js:173",
         "route": "/api/:resource",
         "originApp": "media-content-creative/voice-forge"
       }
@@ -9021,8 +9343,34 @@
     ]
   },
   {
+    "name": "Reversals",
+    "canonicalKey": "reversal",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/calculations/:id/reversals"
+    ],
+    "sourceProjects": [
+      "AIMusicRightsRoyaltyTracker"
+    ],
+    "consolidatedFromApps": [
+      "media-content-creative/music-generation"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "server/routes/governedRoyalties.js:375",
+        "route": "/calculations/:id/reversals",
+        "originApp": "media-content-creative/music-generation"
+      }
+    ]
+  },
+  {
     "name": "Rights Clearance",
-    "canonicalKey": "clearance rights",
+    "canonicalKey": "clearance right",
     "aliases": [],
     "kinds": [
       "api"
@@ -9048,7 +9396,7 @@
   },
   {
     "name": "Rights License",
-    "canonicalKey": "license rights",
+    "canonicalKey": "license right",
     "aliases": [],
     "kinds": [
       "model"
@@ -9093,6 +9441,13 @@
     ],
     "evidence": [
       {
+        "kind": "api",
+        "sourceProject": "AiInteriorDesign",
+        "path": "backend/src/routes/roomLayoutOptimizer.js:80",
+        "route": "/rooms",
+        "originApp": "media-content-creative/logo-brand-kit-generator"
+      },
+      {
         "kind": "navigation",
         "sourceProject": "AIMusicSchoolAcademyManager",
         "path": "frontend/src/components/Sidebar.jsx:25",
@@ -9119,13 +9474,6 @@
         "path": "frontend/src/pages/Rooms.jsx",
         "route": "/Rooms",
         "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiInteriorDesign",
-        "path": "backend/src/routes/roomLayoutOptimizer.js:80",
-        "route": "/rooms",
-        "originApp": "media-content-creative/logo-brand-kit-generator"
       }
     ]
   },
@@ -9375,32 +9723,6 @@
     ]
   },
   {
-    "name": "Sd Status",
-    "canonicalKey": "sd status",
-    "aliases": [],
-    "kinds": [
-      "api"
-    ],
-    "routes": [
-      "/api/sd-status"
-    ],
-    "sourceProjects": [
-      "AiImageGeneration"
-    ],
-    "consolidatedFromApps": [
-      "media-content-creative/music-generation"
-    ],
-    "evidence": [
-      {
-        "kind": "api",
-        "sourceProject": "AiImageGeneration",
-        "path": "backend/server.js:138",
-        "route": "/api/sd-status",
-        "originApp": "media-content-creative/music-generation"
-      }
-    ]
-  },
-  {
     "name": "Skill Assessment",
     "canonicalKey": "assessment skill",
     "aliases": [],
@@ -9491,6 +9813,58 @@
         "sourceProject": "AIMusicGeneration",
         "path": "client/src/pages/SongPipeline.js",
         "route": "/SongPipeline",
+        "originApp": "media-content-creative/music-generation"
+      }
+    ]
+  },
+  {
+    "name": "Statements",
+    "canonicalKey": "statement",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/statements"
+    ],
+    "sourceProjects": [
+      "AIMusicRightsRoyaltyTracker"
+    ],
+    "consolidatedFromApps": [
+      "media-content-creative/music-generation"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "server/routes/governedRoyalties.js:151",
+        "route": "/statements",
+        "originApp": "media-content-creative/music-generation"
+      }
+    ]
+  },
+  {
+    "name": "Stem Separation Jobs",
+    "canonicalKey": "jobs separation stem",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/projects/:id/stem-separation-jobs"
+    ],
+    "sourceProjects": [
+      "AIMusicGeneration"
+    ],
+    "consolidatedFromApps": [
+      "media-content-creative/music-generation"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIMusicGeneration",
+        "path": "server/routes/governedCreation.js:7",
+        "route": "/projects/:id/stem-separation-jobs",
         "originApp": "media-content-creative/music-generation"
       }
     ]
@@ -9634,17 +10008,17 @@
     "evidence": [
       {
         "kind": "api",
-        "sourceProject": "AiImageGeneration",
-        "path": "backend/routes/customViews.js:83",
-        "route": "/style-consistency-heatmap",
-        "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "api",
         "sourceProject": "AIGameAssetGenerator",
         "path": "backend/routes/customViews.js:117",
         "route": "/style-consistency-heatmap",
         "originApp": "media-content-creative/game-balancing-playtesting-agent"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiImageGeneration",
+        "path": "backend/routes/customViews.js:83",
+        "route": "/style-consistency-heatmap",
+        "originApp": "media-content-creative/music-generation"
       }
     ]
   },
@@ -9677,6 +10051,41 @@
       "media-content-creative/music-generation"
     ],
     "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIGameAssetGenerator",
+        "path": "backend/routes/ai.js:242",
+        "route": "/style-transfer",
+        "originApp": "media-content-creative/game-balancing-playtesting-agent"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIGameAssetGenerator",
+        "path": "frontend/src/pages/AIToolsPage.jsx:71",
+        "route": "/api/ai/style-transfer",
+        "originApp": "media-content-creative/game-balancing-playtesting-agent"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AILocalizationTranslationAgency",
+        "path": "client/src/App.js:80",
+        "route": "/ai/style-transfer",
+        "originApp": "media-content-creative/logo-brand-kit-generator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AILocalizationTranslationAgency",
+        "path": "client/src/components/Layout.js:20",
+        "route": "/ai/style-transfer",
+        "originApp": "media-content-creative/logo-brand-kit-generator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AILocalizationTranslationAgency",
+        "path": "client/src/pages/Dashboard.js:29",
+        "route": "/ai/style-transfer",
+        "originApp": "media-content-creative/logo-brand-kit-generator"
+      },
       {
         "kind": "navigation",
         "sourceProject": "AiImageGeneration",
@@ -9718,41 +10127,6 @@
         "path": "frontend/src/pages/StyleTransferDetail.jsx",
         "route": "/StyleTransferDetail",
         "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AILocalizationTranslationAgency",
-        "path": "client/src/App.js:80",
-        "route": "/ai/style-transfer",
-        "originApp": "media-content-creative/logo-brand-kit-generator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AILocalizationTranslationAgency",
-        "path": "client/src/components/Layout.js:20",
-        "route": "/ai/style-transfer",
-        "originApp": "media-content-creative/logo-brand-kit-generator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AILocalizationTranslationAgency",
-        "path": "client/src/pages/Dashboard.js:29",
-        "route": "/ai/style-transfer",
-        "originApp": "media-content-creative/logo-brand-kit-generator"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIGameAssetGenerator",
-        "path": "backend/routes/ai.js:242",
-        "route": "/style-transfer",
-        "originApp": "media-content-creative/game-balancing-playtesting-agent"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIGameAssetGenerator",
-        "path": "frontend/src/pages/AIToolsPage.jsx:71",
-        "route": "/api/ai/style-transfer",
-        "originApp": "media-content-creative/game-balancing-playtesting-agent"
       }
     ]
   },
@@ -9760,7 +10134,8 @@
     "name": "Styles",
     "canonicalKey": "style",
     "aliases": [
-      "Style Detail"
+      "Style Detail",
+      "Styles Page"
     ],
     "kinds": [
       "api",
@@ -9770,6 +10145,7 @@
     "routes": [
       "/StyleDetail",
       "/Styles",
+      "/StylesPage",
       "/meta/styles",
       "/styles"
     ],
@@ -9784,6 +10160,27 @@
       "media-content-creative/video-generation"
     ],
     "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AiInteriorDesign",
+        "path": "backend/src/routes/inspirations.js:124",
+        "route": "/meta/styles",
+        "originApp": "media-content-creative/logo-brand-kit-generator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AiInteriorDesign",
+        "path": "frontend/src/App.jsx:4073",
+        "route": "/styles",
+        "originApp": "media-content-creative/logo-brand-kit-generator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AiInteriorDesign",
+        "path": "frontend/src/App.jsx:409",
+        "route": "/styles",
+        "originApp": "media-content-creative/logo-brand-kit-generator"
+      },
       {
         "kind": "page",
         "sourceProject": "AiImageGeneration",
@@ -9848,25 +10245,11 @@
         "originApp": "media-content-creative/video-generation"
       },
       {
-        "kind": "api",
-        "sourceProject": "AiInteriorDesign",
-        "path": "backend/src/routes/inspirations.js:124",
-        "route": "/meta/styles",
-        "originApp": "media-content-creative/logo-brand-kit-generator"
-      },
-      {
         "kind": "page",
-        "sourceProject": "AiInteriorDesign",
-        "path": "frontend/src/App.jsx:4073",
-        "route": "/styles",
-        "originApp": "media-content-creative/logo-brand-kit-generator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AiInteriorDesign",
-        "path": "frontend/src/App.jsx:409",
-        "route": "/styles",
-        "originApp": "media-content-creative/logo-brand-kit-generator"
+        "sourceProject": "AIVideoGeneration",
+        "path": "frontend/src/pages/StylesPage.js",
+        "route": "/StylesPage",
+        "originApp": "media-content-creative/video-generation"
       }
     ]
   },
@@ -10232,6 +10615,13 @@
     ],
     "evidence": [
       {
+        "kind": "api",
+        "sourceProject": "AIBrandVoiceConsistencyChecker",
+        "path": "server/routes/ai.js:199",
+        "route": "/variation-generator",
+        "originApp": "media-content-creative/logo-brand-kit-generator"
+      },
+      {
         "kind": "navigation",
         "sourceProject": "AiImageGeneration",
         "path": "frontend/src/components/Sidebar.jsx:28",
@@ -10272,13 +10662,6 @@
         "path": "frontend/src/pages/VariationGeneratorDetail.jsx",
         "route": "/VariationGeneratorDetail",
         "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIBrandVoiceConsistencyChecker",
-        "path": "server/routes/ai.js:198",
-        "route": "/variation-generator",
-        "originApp": "media-content-creative/logo-brand-kit-generator"
       }
     ]
   },

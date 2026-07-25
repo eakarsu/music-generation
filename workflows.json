@@ -1,0 +1,1951 @@
+{
+  "version": 1,
+  "appId": "music-generation",
+  "workflows": [
+    {
+      "id": "request-intake",
+      "title": "Academic Request Intake",
+      "description": "Manage request intake for Academic within Music Generation, with explicit ownership, due dates, state transitions, and audit history.",
+      "fields": [
+        {
+          "key": "reference",
+          "label": "Reference",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "subject",
+          "label": "Academic Subject",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "owner",
+          "label": "Owner",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "priority",
+          "label": "Priority",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Low",
+            "Medium",
+            "High",
+            "Critical"
+          ]
+        },
+        {
+          "key": "dueDate",
+          "label": "Due Date",
+          "type": "date",
+          "required": true
+        },
+        {
+          "key": "notes",
+          "label": "Operational Notes",
+          "type": "textarea",
+          "required": true
+        }
+      ],
+      "states": [
+        "draft",
+        "submitted",
+        "triage",
+        "accepted",
+        "rejected"
+      ],
+      "transitions": [
+        {
+          "id": "submit",
+          "label": "Submit Request",
+          "from": [
+            "draft"
+          ],
+          "to": "submitted"
+        },
+        {
+          "id": "triage",
+          "label": "Start Triage",
+          "from": [
+            "submitted"
+          ],
+          "to": "triage"
+        },
+        {
+          "id": "accept",
+          "label": "Accept Request",
+          "from": [
+            "triage"
+          ],
+          "to": "accepted"
+        },
+        {
+          "id": "reject",
+          "label": "Reject Request",
+          "from": [
+            "submitted",
+            "triage"
+          ],
+          "to": "rejected"
+        }
+      ],
+      "seeds": [
+        {
+          "id": "request-intake-001",
+          "state": "draft",
+          "reference": "MUSIC-GENE-0001",
+          "subject": "Academic — North Region — North Region",
+          "owner": "Avery Morgan",
+          "priority": "Low",
+          "dueDate": "2026-08-01",
+          "notes": "Demo request intake record for north region; verify evidence and next action before completion. — North Region"
+        },
+        {
+          "id": "request-intake-002",
+          "state": "draft",
+          "reference": "MUSIC-GENE-0002",
+          "subject": "Academic — Enterprise Account — Enterprise Account",
+          "owner": "Jordan Lee",
+          "priority": "Medium",
+          "dueDate": "2026-08-04",
+          "notes": "Demo request intake record for enterprise account; verify evidence and next action before completion. — Enterprise Account"
+        },
+        {
+          "id": "request-intake-003",
+          "state": "draft",
+          "reference": "MUSIC-GENE-0003",
+          "subject": "Academic — Quarterly Cycle — Quarterly Cycle",
+          "owner": "Taylor Brooks",
+          "priority": "High",
+          "dueDate": "2026-08-07",
+          "notes": "Demo request intake record for quarterly cycle; verify evidence and next action before completion. — Quarterly Cycle"
+        },
+        {
+          "id": "request-intake-004",
+          "state": "draft",
+          "reference": "MUSIC-GENE-0004",
+          "subject": "Academic — Priority Queue — Priority Queue",
+          "owner": "Morgan Chen",
+          "priority": "Critical",
+          "dueDate": "2026-08-10",
+          "notes": "Demo request intake record for priority queue; verify evidence and next action before completion. — Priority Queue"
+        },
+        {
+          "id": "request-intake-005",
+          "state": "draft",
+          "reference": "MUSIC-GENE-0005",
+          "subject": "Academic — Operations Review — Operations Review",
+          "owner": "Riley Patel",
+          "priority": "Low",
+          "dueDate": "2026-08-13",
+          "notes": "Demo request intake record for operations review; verify evidence and next action before completion. — Operations Review"
+        },
+        {
+          "id": "request-intake-006",
+          "state": "draft",
+          "reference": "MUSIC-GENE-0006",
+          "subject": "Academic — Customer Request — Customer Request",
+          "owner": "Casey Nguyen",
+          "priority": "Medium",
+          "dueDate": "2026-08-16",
+          "notes": "Demo request intake record for customer request; verify evidence and next action before completion. — Customer Request"
+        },
+        {
+          "id": "request-intake-007",
+          "state": "draft",
+          "reference": "MUSIC-GENE-0007",
+          "subject": "Academic — Compliance Check — Compliance Check",
+          "owner": "Cameron Diaz",
+          "priority": "High",
+          "dueDate": "2026-08-19",
+          "notes": "Demo request intake record for compliance check; verify evidence and next action before completion. — Compliance Check"
+        },
+        {
+          "id": "request-intake-008",
+          "state": "draft",
+          "reference": "MUSIC-GENE-0008",
+          "subject": "Academic — Service Window — Service Window",
+          "owner": "Drew Wilson",
+          "priority": "Critical",
+          "dueDate": "2026-08-22",
+          "notes": "Demo request intake record for service window; verify evidence and next action before completion. — Service Window"
+        },
+        {
+          "id": "request-intake-009",
+          "state": "draft",
+          "reference": "MUSIC-GENE-0009",
+          "subject": "Academic — Quality Sample — Quality Sample",
+          "owner": "Emerson Clark",
+          "priority": "Low",
+          "dueDate": "2026-08-25",
+          "notes": "Demo request intake record for quality sample; verify evidence and next action before completion. — Quality Sample"
+        },
+        {
+          "id": "request-intake-010",
+          "state": "draft",
+          "reference": "MUSIC-GENE-0010",
+          "subject": "Academic — Management Review — Management Review",
+          "owner": "Hayden Kim",
+          "priority": "Medium",
+          "dueDate": "2026-08-28",
+          "notes": "Demo request intake record for management review; verify evidence and next action before completion. — Management Review"
+        },
+        {
+          "id": "request-intake-011",
+          "state": "draft",
+          "reference": "MUSIC-GENE-0011",
+          "subject": "Academic — Exception Follow-up — Exception Follow-up",
+          "owner": "Jamie Rivera",
+          "priority": "High",
+          "dueDate": "2026-08-31",
+          "notes": "Demo request intake record for exception follow-up; verify evidence and next action before completion. — Exception Follow-up"
+        },
+        {
+          "id": "request-intake-012",
+          "state": "draft",
+          "reference": "MUSIC-GENE-0012",
+          "subject": "Academic — Evidence Package — Evidence Package",
+          "owner": "Kai Thompson",
+          "priority": "Critical",
+          "dueDate": "2026-09-03",
+          "notes": "Demo request intake record for evidence package; verify evidence and next action before completion. — Evidence Package"
+        },
+        {
+          "id": "request-intake-013",
+          "state": "draft",
+          "reference": "MUSIC-GENE-0013",
+          "subject": "Academic — Planning Cycle — Planning Cycle",
+          "owner": "Logan Shah",
+          "priority": "Low",
+          "dueDate": "2026-09-06",
+          "notes": "Demo request intake record for planning cycle; verify evidence and next action before completion. — Planning Cycle"
+        },
+        {
+          "id": "request-intake-014",
+          "state": "draft",
+          "reference": "MUSIC-GENE-0014",
+          "subject": "Academic — Performance Review — Performance Review",
+          "owner": "Parker Evans",
+          "priority": "Medium",
+          "dueDate": "2026-09-09",
+          "notes": "Demo request intake record for performance review; verify evidence and next action before completion. — Performance Review"
+        },
+        {
+          "id": "request-intake-015",
+          "state": "draft",
+          "reference": "MUSIC-GENE-0015",
+          "subject": "Academic — Final Verification — Final Verification",
+          "owner": "Quinn Murphy",
+          "priority": "High",
+          "dueDate": "2026-09-12",
+          "notes": "Demo request intake record for final verification; verify evidence and next action before completion. — Final Verification"
+        }
+      ]
+    },
+    {
+      "id": "operations-queue",
+      "title": "Academy Views Operations Queue",
+      "description": "Manage operations queue for Academy Views within Music Generation, with explicit ownership, due dates, state transitions, and audit history.",
+      "fields": [
+        {
+          "key": "reference",
+          "label": "Reference",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "subject",
+          "label": "Academy Views Subject",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "owner",
+          "label": "Owner",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "priority",
+          "label": "Priority",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Low",
+            "Medium",
+            "High",
+            "Critical"
+          ]
+        },
+        {
+          "key": "dueDate",
+          "label": "Due Date",
+          "type": "date",
+          "required": true
+        },
+        {
+          "key": "notes",
+          "label": "Operational Notes",
+          "type": "textarea",
+          "required": true
+        }
+      ],
+      "states": [
+        "queued",
+        "assigned",
+        "in-progress",
+        "blocked",
+        "complete"
+      ],
+      "transitions": [
+        {
+          "id": "assign",
+          "label": "Assign Work",
+          "from": [
+            "queued"
+          ],
+          "to": "assigned"
+        },
+        {
+          "id": "start",
+          "label": "Start Work",
+          "from": [
+            "assigned"
+          ],
+          "to": "in-progress"
+        },
+        {
+          "id": "block",
+          "label": "Record Blocker",
+          "from": [
+            "assigned",
+            "in-progress"
+          ],
+          "to": "blocked"
+        },
+        {
+          "id": "complete",
+          "label": "Complete Work",
+          "from": [
+            "in-progress",
+            "blocked"
+          ],
+          "to": "complete"
+        }
+      ],
+      "seeds": [
+        {
+          "id": "operations-queue-001",
+          "state": "queued",
+          "reference": "MUSIC-GENE-0001",
+          "subject": "Academy Views — North Region — North Region",
+          "owner": "Avery Morgan",
+          "priority": "Low",
+          "dueDate": "2026-08-01",
+          "notes": "Demo operations queue record for north region; verify evidence and next action before completion. — North Region"
+        },
+        {
+          "id": "operations-queue-002",
+          "state": "queued",
+          "reference": "MUSIC-GENE-0002",
+          "subject": "Academy Views — Enterprise Account — Enterprise Account",
+          "owner": "Jordan Lee",
+          "priority": "Medium",
+          "dueDate": "2026-08-04",
+          "notes": "Demo operations queue record for enterprise account; verify evidence and next action before completion. — Enterprise Account"
+        },
+        {
+          "id": "operations-queue-003",
+          "state": "queued",
+          "reference": "MUSIC-GENE-0003",
+          "subject": "Academy Views — Quarterly Cycle — Quarterly Cycle",
+          "owner": "Taylor Brooks",
+          "priority": "High",
+          "dueDate": "2026-08-07",
+          "notes": "Demo operations queue record for quarterly cycle; verify evidence and next action before completion. — Quarterly Cycle"
+        },
+        {
+          "id": "operations-queue-004",
+          "state": "queued",
+          "reference": "MUSIC-GENE-0004",
+          "subject": "Academy Views — Priority Queue — Priority Queue",
+          "owner": "Morgan Chen",
+          "priority": "Critical",
+          "dueDate": "2026-08-10",
+          "notes": "Demo operations queue record for priority queue; verify evidence and next action before completion. — Priority Queue"
+        },
+        {
+          "id": "operations-queue-005",
+          "state": "queued",
+          "reference": "MUSIC-GENE-0005",
+          "subject": "Academy Views — Operations Review — Operations Review",
+          "owner": "Riley Patel",
+          "priority": "Low",
+          "dueDate": "2026-08-13",
+          "notes": "Demo operations queue record for operations review; verify evidence and next action before completion. — Operations Review"
+        },
+        {
+          "id": "operations-queue-006",
+          "state": "queued",
+          "reference": "MUSIC-GENE-0006",
+          "subject": "Academy Views — Customer Request — Customer Request",
+          "owner": "Casey Nguyen",
+          "priority": "Medium",
+          "dueDate": "2026-08-16",
+          "notes": "Demo operations queue record for customer request; verify evidence and next action before completion. — Customer Request"
+        },
+        {
+          "id": "operations-queue-007",
+          "state": "queued",
+          "reference": "MUSIC-GENE-0007",
+          "subject": "Academy Views — Compliance Check — Compliance Check",
+          "owner": "Cameron Diaz",
+          "priority": "High",
+          "dueDate": "2026-08-19",
+          "notes": "Demo operations queue record for compliance check; verify evidence and next action before completion. — Compliance Check"
+        },
+        {
+          "id": "operations-queue-008",
+          "state": "queued",
+          "reference": "MUSIC-GENE-0008",
+          "subject": "Academy Views — Service Window — Service Window",
+          "owner": "Drew Wilson",
+          "priority": "Critical",
+          "dueDate": "2026-08-22",
+          "notes": "Demo operations queue record for service window; verify evidence and next action before completion. — Service Window"
+        },
+        {
+          "id": "operations-queue-009",
+          "state": "queued",
+          "reference": "MUSIC-GENE-0009",
+          "subject": "Academy Views — Quality Sample — Quality Sample",
+          "owner": "Emerson Clark",
+          "priority": "Low",
+          "dueDate": "2026-08-25",
+          "notes": "Demo operations queue record for quality sample; verify evidence and next action before completion. — Quality Sample"
+        },
+        {
+          "id": "operations-queue-010",
+          "state": "queued",
+          "reference": "MUSIC-GENE-0010",
+          "subject": "Academy Views — Management Review — Management Review",
+          "owner": "Hayden Kim",
+          "priority": "Medium",
+          "dueDate": "2026-08-28",
+          "notes": "Demo operations queue record for management review; verify evidence and next action before completion. — Management Review"
+        },
+        {
+          "id": "operations-queue-011",
+          "state": "queued",
+          "reference": "MUSIC-GENE-0011",
+          "subject": "Academy Views — Exception Follow-up — Exception Follow-up",
+          "owner": "Jamie Rivera",
+          "priority": "High",
+          "dueDate": "2026-08-31",
+          "notes": "Demo operations queue record for exception follow-up; verify evidence and next action before completion. — Exception Follow-up"
+        },
+        {
+          "id": "operations-queue-012",
+          "state": "queued",
+          "reference": "MUSIC-GENE-0012",
+          "subject": "Academy Views — Evidence Package — Evidence Package",
+          "owner": "Kai Thompson",
+          "priority": "Critical",
+          "dueDate": "2026-09-03",
+          "notes": "Demo operations queue record for evidence package; verify evidence and next action before completion. — Evidence Package"
+        },
+        {
+          "id": "operations-queue-013",
+          "state": "queued",
+          "reference": "MUSIC-GENE-0013",
+          "subject": "Academy Views — Planning Cycle — Planning Cycle",
+          "owner": "Logan Shah",
+          "priority": "Low",
+          "dueDate": "2026-09-06",
+          "notes": "Demo operations queue record for planning cycle; verify evidence and next action before completion. — Planning Cycle"
+        },
+        {
+          "id": "operations-queue-014",
+          "state": "queued",
+          "reference": "MUSIC-GENE-0014",
+          "subject": "Academy Views — Performance Review — Performance Review",
+          "owner": "Parker Evans",
+          "priority": "Medium",
+          "dueDate": "2026-09-09",
+          "notes": "Demo operations queue record for performance review; verify evidence and next action before completion. — Performance Review"
+        },
+        {
+          "id": "operations-queue-015",
+          "state": "queued",
+          "reference": "MUSIC-GENE-0015",
+          "subject": "Academy Views — Final Verification — Final Verification",
+          "owner": "Quinn Murphy",
+          "priority": "High",
+          "dueDate": "2026-09-12",
+          "notes": "Demo operations queue record for final verification; verify evidence and next action before completion. — Final Verification"
+        }
+      ]
+    },
+    {
+      "id": "quality-review",
+      "title": "Acceptance Evaluations Quality Review",
+      "description": "Manage quality review for Acceptance Evaluations within Music Generation, with explicit ownership, due dates, state transitions, and audit history.",
+      "fields": [
+        {
+          "key": "reference",
+          "label": "Reference",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "subject",
+          "label": "Acceptance Evaluations Subject",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "owner",
+          "label": "Owner",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "priority",
+          "label": "Priority",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Low",
+            "Medium",
+            "High",
+            "Critical"
+          ]
+        },
+        {
+          "key": "dueDate",
+          "label": "Due Date",
+          "type": "date",
+          "required": true
+        },
+        {
+          "key": "notes",
+          "label": "Operational Notes",
+          "type": "textarea",
+          "required": true
+        }
+      ],
+      "states": [
+        "pending",
+        "reviewing",
+        "changes-required",
+        "verified",
+        "closed"
+      ],
+      "transitions": [
+        {
+          "id": "review",
+          "label": "Begin Review",
+          "from": [
+            "pending"
+          ],
+          "to": "reviewing"
+        },
+        {
+          "id": "request-changes",
+          "label": "Request Changes",
+          "from": [
+            "reviewing"
+          ],
+          "to": "changes-required"
+        },
+        {
+          "id": "verify",
+          "label": "Verify Result",
+          "from": [
+            "reviewing",
+            "changes-required"
+          ],
+          "to": "verified"
+        },
+        {
+          "id": "close",
+          "label": "Close Review",
+          "from": [
+            "verified"
+          ],
+          "to": "closed"
+        }
+      ],
+      "seeds": [
+        {
+          "id": "quality-review-001",
+          "state": "pending",
+          "reference": "MUSIC-GENE-0001",
+          "subject": "Acceptance Evaluations — North Region — North Region",
+          "owner": "Avery Morgan",
+          "priority": "Low",
+          "dueDate": "2026-08-01",
+          "notes": "Demo quality review record for north region; verify evidence and next action before completion. — North Region"
+        },
+        {
+          "id": "quality-review-002",
+          "state": "pending",
+          "reference": "MUSIC-GENE-0002",
+          "subject": "Acceptance Evaluations — Enterprise Account — Enterprise Account",
+          "owner": "Jordan Lee",
+          "priority": "Medium",
+          "dueDate": "2026-08-04",
+          "notes": "Demo quality review record for enterprise account; verify evidence and next action before completion. — Enterprise Account"
+        },
+        {
+          "id": "quality-review-003",
+          "state": "pending",
+          "reference": "MUSIC-GENE-0003",
+          "subject": "Acceptance Evaluations — Quarterly Cycle — Quarterly Cycle",
+          "owner": "Taylor Brooks",
+          "priority": "High",
+          "dueDate": "2026-08-07",
+          "notes": "Demo quality review record for quarterly cycle; verify evidence and next action before completion. — Quarterly Cycle"
+        },
+        {
+          "id": "quality-review-004",
+          "state": "pending",
+          "reference": "MUSIC-GENE-0004",
+          "subject": "Acceptance Evaluations — Priority Queue — Priority Queue",
+          "owner": "Morgan Chen",
+          "priority": "Critical",
+          "dueDate": "2026-08-10",
+          "notes": "Demo quality review record for priority queue; verify evidence and next action before completion. — Priority Queue"
+        },
+        {
+          "id": "quality-review-005",
+          "state": "pending",
+          "reference": "MUSIC-GENE-0005",
+          "subject": "Acceptance Evaluations — Operations Review — Operations Review",
+          "owner": "Riley Patel",
+          "priority": "Low",
+          "dueDate": "2026-08-13",
+          "notes": "Demo quality review record for operations review; verify evidence and next action before completion. — Operations Review"
+        },
+        {
+          "id": "quality-review-006",
+          "state": "pending",
+          "reference": "MUSIC-GENE-0006",
+          "subject": "Acceptance Evaluations — Customer Request — Customer Request",
+          "owner": "Casey Nguyen",
+          "priority": "Medium",
+          "dueDate": "2026-08-16",
+          "notes": "Demo quality review record for customer request; verify evidence and next action before completion. — Customer Request"
+        },
+        {
+          "id": "quality-review-007",
+          "state": "pending",
+          "reference": "MUSIC-GENE-0007",
+          "subject": "Acceptance Evaluations — Compliance Check — Compliance Check",
+          "owner": "Cameron Diaz",
+          "priority": "High",
+          "dueDate": "2026-08-19",
+          "notes": "Demo quality review record for compliance check; verify evidence and next action before completion. — Compliance Check"
+        },
+        {
+          "id": "quality-review-008",
+          "state": "pending",
+          "reference": "MUSIC-GENE-0008",
+          "subject": "Acceptance Evaluations — Service Window — Service Window",
+          "owner": "Drew Wilson",
+          "priority": "Critical",
+          "dueDate": "2026-08-22",
+          "notes": "Demo quality review record for service window; verify evidence and next action before completion. — Service Window"
+        },
+        {
+          "id": "quality-review-009",
+          "state": "pending",
+          "reference": "MUSIC-GENE-0009",
+          "subject": "Acceptance Evaluations — Quality Sample — Quality Sample",
+          "owner": "Emerson Clark",
+          "priority": "Low",
+          "dueDate": "2026-08-25",
+          "notes": "Demo quality review record for quality sample; verify evidence and next action before completion. — Quality Sample"
+        },
+        {
+          "id": "quality-review-010",
+          "state": "pending",
+          "reference": "MUSIC-GENE-0010",
+          "subject": "Acceptance Evaluations — Management Review — Management Review",
+          "owner": "Hayden Kim",
+          "priority": "Medium",
+          "dueDate": "2026-08-28",
+          "notes": "Demo quality review record for management review; verify evidence and next action before completion. — Management Review"
+        },
+        {
+          "id": "quality-review-011",
+          "state": "pending",
+          "reference": "MUSIC-GENE-0011",
+          "subject": "Acceptance Evaluations — Exception Follow-up — Exception Follow-up",
+          "owner": "Jamie Rivera",
+          "priority": "High",
+          "dueDate": "2026-08-31",
+          "notes": "Demo quality review record for exception follow-up; verify evidence and next action before completion. — Exception Follow-up"
+        },
+        {
+          "id": "quality-review-012",
+          "state": "pending",
+          "reference": "MUSIC-GENE-0012",
+          "subject": "Acceptance Evaluations — Evidence Package — Evidence Package",
+          "owner": "Kai Thompson",
+          "priority": "Critical",
+          "dueDate": "2026-09-03",
+          "notes": "Demo quality review record for evidence package; verify evidence and next action before completion. — Evidence Package"
+        },
+        {
+          "id": "quality-review-013",
+          "state": "pending",
+          "reference": "MUSIC-GENE-0013",
+          "subject": "Acceptance Evaluations — Planning Cycle — Planning Cycle",
+          "owner": "Logan Shah",
+          "priority": "Low",
+          "dueDate": "2026-09-06",
+          "notes": "Demo quality review record for planning cycle; verify evidence and next action before completion. — Planning Cycle"
+        },
+        {
+          "id": "quality-review-014",
+          "state": "pending",
+          "reference": "MUSIC-GENE-0014",
+          "subject": "Acceptance Evaluations — Performance Review — Performance Review",
+          "owner": "Parker Evans",
+          "priority": "Medium",
+          "dueDate": "2026-09-09",
+          "notes": "Demo quality review record for performance review; verify evidence and next action before completion. — Performance Review"
+        },
+        {
+          "id": "quality-review-015",
+          "state": "pending",
+          "reference": "MUSIC-GENE-0015",
+          "subject": "Acceptance Evaluations — Final Verification — Final Verification",
+          "owner": "Quinn Murphy",
+          "priority": "High",
+          "dueDate": "2026-09-12",
+          "notes": "Demo quality review record for final verification; verify evidence and next action before completion. — Final Verification"
+        }
+      ]
+    },
+    {
+      "id": "risk-assessment",
+      "title": "Accounting Periods Risk Assessment",
+      "description": "Manage risk assessment for Accounting Periods within Music Generation, with explicit ownership, due dates, state transitions, and audit history.",
+      "fields": [
+        {
+          "key": "reference",
+          "label": "Reference",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "subject",
+          "label": "Accounting Periods Subject",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "owner",
+          "label": "Owner",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "priority",
+          "label": "Priority",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Low",
+            "Medium",
+            "High",
+            "Critical"
+          ]
+        },
+        {
+          "key": "dueDate",
+          "label": "Due Date",
+          "type": "date",
+          "required": true
+        },
+        {
+          "key": "notes",
+          "label": "Operational Notes",
+          "type": "textarea",
+          "required": true
+        }
+      ],
+      "states": [
+        "identified",
+        "assessing",
+        "mitigating",
+        "accepted",
+        "closed"
+      ],
+      "transitions": [
+        {
+          "id": "assess",
+          "label": "Assess Risk",
+          "from": [
+            "identified"
+          ],
+          "to": "assessing"
+        },
+        {
+          "id": "mitigate",
+          "label": "Plan Mitigation",
+          "from": [
+            "assessing"
+          ],
+          "to": "mitigating"
+        },
+        {
+          "id": "accept",
+          "label": "Accept Risk",
+          "from": [
+            "assessing",
+            "mitigating"
+          ],
+          "to": "accepted"
+        },
+        {
+          "id": "close",
+          "label": "Close Risk",
+          "from": [
+            "accepted"
+          ],
+          "to": "closed"
+        }
+      ],
+      "seeds": [
+        {
+          "id": "risk-assessment-001",
+          "state": "identified",
+          "reference": "MUSIC-GENE-0001",
+          "subject": "Accounting Periods — North Region — North Region",
+          "owner": "Avery Morgan",
+          "priority": "Low",
+          "dueDate": "2026-08-01",
+          "notes": "Demo risk assessment record for north region; verify evidence and next action before completion. — North Region"
+        },
+        {
+          "id": "risk-assessment-002",
+          "state": "identified",
+          "reference": "MUSIC-GENE-0002",
+          "subject": "Accounting Periods — Enterprise Account — Enterprise Account",
+          "owner": "Jordan Lee",
+          "priority": "Medium",
+          "dueDate": "2026-08-04",
+          "notes": "Demo risk assessment record for enterprise account; verify evidence and next action before completion. — Enterprise Account"
+        },
+        {
+          "id": "risk-assessment-003",
+          "state": "identified",
+          "reference": "MUSIC-GENE-0003",
+          "subject": "Accounting Periods — Quarterly Cycle — Quarterly Cycle",
+          "owner": "Taylor Brooks",
+          "priority": "High",
+          "dueDate": "2026-08-07",
+          "notes": "Demo risk assessment record for quarterly cycle; verify evidence and next action before completion. — Quarterly Cycle"
+        },
+        {
+          "id": "risk-assessment-004",
+          "state": "identified",
+          "reference": "MUSIC-GENE-0004",
+          "subject": "Accounting Periods — Priority Queue — Priority Queue",
+          "owner": "Morgan Chen",
+          "priority": "Critical",
+          "dueDate": "2026-08-10",
+          "notes": "Demo risk assessment record for priority queue; verify evidence and next action before completion. — Priority Queue"
+        },
+        {
+          "id": "risk-assessment-005",
+          "state": "identified",
+          "reference": "MUSIC-GENE-0005",
+          "subject": "Accounting Periods — Operations Review — Operations Review",
+          "owner": "Riley Patel",
+          "priority": "Low",
+          "dueDate": "2026-08-13",
+          "notes": "Demo risk assessment record for operations review; verify evidence and next action before completion. — Operations Review"
+        },
+        {
+          "id": "risk-assessment-006",
+          "state": "identified",
+          "reference": "MUSIC-GENE-0006",
+          "subject": "Accounting Periods — Customer Request — Customer Request",
+          "owner": "Casey Nguyen",
+          "priority": "Medium",
+          "dueDate": "2026-08-16",
+          "notes": "Demo risk assessment record for customer request; verify evidence and next action before completion. — Customer Request"
+        },
+        {
+          "id": "risk-assessment-007",
+          "state": "identified",
+          "reference": "MUSIC-GENE-0007",
+          "subject": "Accounting Periods — Compliance Check — Compliance Check",
+          "owner": "Cameron Diaz",
+          "priority": "High",
+          "dueDate": "2026-08-19",
+          "notes": "Demo risk assessment record for compliance check; verify evidence and next action before completion. — Compliance Check"
+        },
+        {
+          "id": "risk-assessment-008",
+          "state": "identified",
+          "reference": "MUSIC-GENE-0008",
+          "subject": "Accounting Periods — Service Window — Service Window",
+          "owner": "Drew Wilson",
+          "priority": "Critical",
+          "dueDate": "2026-08-22",
+          "notes": "Demo risk assessment record for service window; verify evidence and next action before completion. — Service Window"
+        },
+        {
+          "id": "risk-assessment-009",
+          "state": "identified",
+          "reference": "MUSIC-GENE-0009",
+          "subject": "Accounting Periods — Quality Sample — Quality Sample",
+          "owner": "Emerson Clark",
+          "priority": "Low",
+          "dueDate": "2026-08-25",
+          "notes": "Demo risk assessment record for quality sample; verify evidence and next action before completion. — Quality Sample"
+        },
+        {
+          "id": "risk-assessment-010",
+          "state": "identified",
+          "reference": "MUSIC-GENE-0010",
+          "subject": "Accounting Periods — Management Review — Management Review",
+          "owner": "Hayden Kim",
+          "priority": "Medium",
+          "dueDate": "2026-08-28",
+          "notes": "Demo risk assessment record for management review; verify evidence and next action before completion. — Management Review"
+        },
+        {
+          "id": "risk-assessment-011",
+          "state": "identified",
+          "reference": "MUSIC-GENE-0011",
+          "subject": "Accounting Periods — Exception Follow-up — Exception Follow-up",
+          "owner": "Jamie Rivera",
+          "priority": "High",
+          "dueDate": "2026-08-31",
+          "notes": "Demo risk assessment record for exception follow-up; verify evidence and next action before completion. — Exception Follow-up"
+        },
+        {
+          "id": "risk-assessment-012",
+          "state": "identified",
+          "reference": "MUSIC-GENE-0012",
+          "subject": "Accounting Periods — Evidence Package — Evidence Package",
+          "owner": "Kai Thompson",
+          "priority": "Critical",
+          "dueDate": "2026-09-03",
+          "notes": "Demo risk assessment record for evidence package; verify evidence and next action before completion. — Evidence Package"
+        },
+        {
+          "id": "risk-assessment-013",
+          "state": "identified",
+          "reference": "MUSIC-GENE-0013",
+          "subject": "Accounting Periods — Planning Cycle — Planning Cycle",
+          "owner": "Logan Shah",
+          "priority": "Low",
+          "dueDate": "2026-09-06",
+          "notes": "Demo risk assessment record for planning cycle; verify evidence and next action before completion. — Planning Cycle"
+        },
+        {
+          "id": "risk-assessment-014",
+          "state": "identified",
+          "reference": "MUSIC-GENE-0014",
+          "subject": "Accounting Periods — Performance Review — Performance Review",
+          "owner": "Parker Evans",
+          "priority": "Medium",
+          "dueDate": "2026-09-09",
+          "notes": "Demo risk assessment record for performance review; verify evidence and next action before completion. — Performance Review"
+        },
+        {
+          "id": "risk-assessment-015",
+          "state": "identified",
+          "reference": "MUSIC-GENE-0015",
+          "subject": "Accounting Periods — Final Verification — Final Verification",
+          "owner": "Quinn Murphy",
+          "priority": "High",
+          "dueDate": "2026-09-12",
+          "notes": "Demo risk assessment record for final verification; verify evidence and next action before completion. — Final Verification"
+        }
+      ]
+    },
+    {
+      "id": "evidence-management",
+      "title": "AI Ensemble Assignment Evidence Management",
+      "description": "Manage evidence management for AI Ensemble Assignment within Music Generation, with explicit ownership, due dates, state transitions, and audit history.",
+      "fields": [
+        {
+          "key": "reference",
+          "label": "Reference",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "subject",
+          "label": "AI Ensemble Assignment Subject",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "owner",
+          "label": "Owner",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "priority",
+          "label": "Priority",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Low",
+            "Medium",
+            "High",
+            "Critical"
+          ]
+        },
+        {
+          "key": "dueDate",
+          "label": "Due Date",
+          "type": "date",
+          "required": true
+        },
+        {
+          "key": "notes",
+          "label": "Operational Notes",
+          "type": "textarea",
+          "required": true
+        }
+      ],
+      "states": [
+        "requested",
+        "collected",
+        "reviewing",
+        "verified",
+        "archived"
+      ],
+      "transitions": [
+        {
+          "id": "collect",
+          "label": "Collect Evidence",
+          "from": [
+            "requested"
+          ],
+          "to": "collected"
+        },
+        {
+          "id": "review",
+          "label": "Review Evidence",
+          "from": [
+            "collected"
+          ],
+          "to": "reviewing"
+        },
+        {
+          "id": "verify",
+          "label": "Verify Evidence",
+          "from": [
+            "reviewing"
+          ],
+          "to": "verified"
+        },
+        {
+          "id": "archive",
+          "label": "Archive Evidence",
+          "from": [
+            "verified"
+          ],
+          "to": "archived"
+        }
+      ],
+      "seeds": [
+        {
+          "id": "evidence-management-001",
+          "state": "requested",
+          "reference": "MUSIC-GENE-0001",
+          "subject": "AI Ensemble Assignment — North Region — North Region",
+          "owner": "Avery Morgan",
+          "priority": "Low",
+          "dueDate": "2026-08-01",
+          "notes": "Demo evidence management record for north region; verify evidence and next action before completion. — North Region"
+        },
+        {
+          "id": "evidence-management-002",
+          "state": "requested",
+          "reference": "MUSIC-GENE-0002",
+          "subject": "AI Ensemble Assignment — Enterprise Account — Enterprise Account",
+          "owner": "Jordan Lee",
+          "priority": "Medium",
+          "dueDate": "2026-08-04",
+          "notes": "Demo evidence management record for enterprise account; verify evidence and next action before completion. — Enterprise Account"
+        },
+        {
+          "id": "evidence-management-003",
+          "state": "requested",
+          "reference": "MUSIC-GENE-0003",
+          "subject": "AI Ensemble Assignment — Quarterly Cycle — Quarterly Cycle",
+          "owner": "Taylor Brooks",
+          "priority": "High",
+          "dueDate": "2026-08-07",
+          "notes": "Demo evidence management record for quarterly cycle; verify evidence and next action before completion. — Quarterly Cycle"
+        },
+        {
+          "id": "evidence-management-004",
+          "state": "requested",
+          "reference": "MUSIC-GENE-0004",
+          "subject": "AI Ensemble Assignment — Priority Queue — Priority Queue",
+          "owner": "Morgan Chen",
+          "priority": "Critical",
+          "dueDate": "2026-08-10",
+          "notes": "Demo evidence management record for priority queue; verify evidence and next action before completion. — Priority Queue"
+        },
+        {
+          "id": "evidence-management-005",
+          "state": "requested",
+          "reference": "MUSIC-GENE-0005",
+          "subject": "AI Ensemble Assignment — Operations Review — Operations Review",
+          "owner": "Riley Patel",
+          "priority": "Low",
+          "dueDate": "2026-08-13",
+          "notes": "Demo evidence management record for operations review; verify evidence and next action before completion. — Operations Review"
+        },
+        {
+          "id": "evidence-management-006",
+          "state": "requested",
+          "reference": "MUSIC-GENE-0006",
+          "subject": "AI Ensemble Assignment — Customer Request — Customer Request",
+          "owner": "Casey Nguyen",
+          "priority": "Medium",
+          "dueDate": "2026-08-16",
+          "notes": "Demo evidence management record for customer request; verify evidence and next action before completion. — Customer Request"
+        },
+        {
+          "id": "evidence-management-007",
+          "state": "requested",
+          "reference": "MUSIC-GENE-0007",
+          "subject": "AI Ensemble Assignment — Compliance Check — Compliance Check",
+          "owner": "Cameron Diaz",
+          "priority": "High",
+          "dueDate": "2026-08-19",
+          "notes": "Demo evidence management record for compliance check; verify evidence and next action before completion. — Compliance Check"
+        },
+        {
+          "id": "evidence-management-008",
+          "state": "requested",
+          "reference": "MUSIC-GENE-0008",
+          "subject": "AI Ensemble Assignment — Service Window — Service Window",
+          "owner": "Drew Wilson",
+          "priority": "Critical",
+          "dueDate": "2026-08-22",
+          "notes": "Demo evidence management record for service window; verify evidence and next action before completion. — Service Window"
+        },
+        {
+          "id": "evidence-management-009",
+          "state": "requested",
+          "reference": "MUSIC-GENE-0009",
+          "subject": "AI Ensemble Assignment — Quality Sample — Quality Sample",
+          "owner": "Emerson Clark",
+          "priority": "Low",
+          "dueDate": "2026-08-25",
+          "notes": "Demo evidence management record for quality sample; verify evidence and next action before completion. — Quality Sample"
+        },
+        {
+          "id": "evidence-management-010",
+          "state": "requested",
+          "reference": "MUSIC-GENE-0010",
+          "subject": "AI Ensemble Assignment — Management Review — Management Review",
+          "owner": "Hayden Kim",
+          "priority": "Medium",
+          "dueDate": "2026-08-28",
+          "notes": "Demo evidence management record for management review; verify evidence and next action before completion. — Management Review"
+        },
+        {
+          "id": "evidence-management-011",
+          "state": "requested",
+          "reference": "MUSIC-GENE-0011",
+          "subject": "AI Ensemble Assignment — Exception Follow-up — Exception Follow-up",
+          "owner": "Jamie Rivera",
+          "priority": "High",
+          "dueDate": "2026-08-31",
+          "notes": "Demo evidence management record for exception follow-up; verify evidence and next action before completion. — Exception Follow-up"
+        },
+        {
+          "id": "evidence-management-012",
+          "state": "requested",
+          "reference": "MUSIC-GENE-0012",
+          "subject": "AI Ensemble Assignment — Evidence Package — Evidence Package",
+          "owner": "Kai Thompson",
+          "priority": "Critical",
+          "dueDate": "2026-09-03",
+          "notes": "Demo evidence management record for evidence package; verify evidence and next action before completion. — Evidence Package"
+        },
+        {
+          "id": "evidence-management-013",
+          "state": "requested",
+          "reference": "MUSIC-GENE-0013",
+          "subject": "AI Ensemble Assignment — Planning Cycle — Planning Cycle",
+          "owner": "Logan Shah",
+          "priority": "Low",
+          "dueDate": "2026-09-06",
+          "notes": "Demo evidence management record for planning cycle; verify evidence and next action before completion. — Planning Cycle"
+        },
+        {
+          "id": "evidence-management-014",
+          "state": "requested",
+          "reference": "MUSIC-GENE-0014",
+          "subject": "AI Ensemble Assignment — Performance Review — Performance Review",
+          "owner": "Parker Evans",
+          "priority": "Medium",
+          "dueDate": "2026-09-09",
+          "notes": "Demo evidence management record for performance review; verify evidence and next action before completion. — Performance Review"
+        },
+        {
+          "id": "evidence-management-015",
+          "state": "requested",
+          "reference": "MUSIC-GENE-0015",
+          "subject": "AI Ensemble Assignment — Final Verification — Final Verification",
+          "owner": "Quinn Murphy",
+          "priority": "High",
+          "dueDate": "2026-09-12",
+          "notes": "Demo evidence management record for final verification; verify evidence and next action before completion. — Final Verification"
+        }
+      ]
+    },
+    {
+      "id": "exception-resolution",
+      "title": "AI Event Promotion Exception Resolution",
+      "description": "Manage exception resolution for AI Event Promotion within Music Generation, with explicit ownership, due dates, state transitions, and audit history.",
+      "fields": [
+        {
+          "key": "reference",
+          "label": "Reference",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "subject",
+          "label": "AI Event Promotion Subject",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "owner",
+          "label": "Owner",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "priority",
+          "label": "Priority",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Low",
+            "Medium",
+            "High",
+            "Critical"
+          ]
+        },
+        {
+          "key": "dueDate",
+          "label": "Due Date",
+          "type": "date",
+          "required": true
+        },
+        {
+          "key": "notes",
+          "label": "Operational Notes",
+          "type": "textarea",
+          "required": true
+        }
+      ],
+      "states": [
+        "open",
+        "investigating",
+        "remediating",
+        "resolved",
+        "waived"
+      ],
+      "transitions": [
+        {
+          "id": "investigate",
+          "label": "Investigate Exception",
+          "from": [
+            "open"
+          ],
+          "to": "investigating"
+        },
+        {
+          "id": "remediate",
+          "label": "Start Remediation",
+          "from": [
+            "investigating"
+          ],
+          "to": "remediating"
+        },
+        {
+          "id": "resolve",
+          "label": "Resolve Exception",
+          "from": [
+            "investigating",
+            "remediating"
+          ],
+          "to": "resolved"
+        },
+        {
+          "id": "waive",
+          "label": "Approve Waiver",
+          "from": [
+            "investigating"
+          ],
+          "to": "waived"
+        }
+      ],
+      "seeds": [
+        {
+          "id": "exception-resolution-001",
+          "state": "open",
+          "reference": "MUSIC-GENE-0001",
+          "subject": "AI Event Promotion — North Region — North Region",
+          "owner": "Avery Morgan",
+          "priority": "Low",
+          "dueDate": "2026-08-01",
+          "notes": "Demo exception resolution record for north region; verify evidence and next action before completion. — North Region"
+        },
+        {
+          "id": "exception-resolution-002",
+          "state": "open",
+          "reference": "MUSIC-GENE-0002",
+          "subject": "AI Event Promotion — Enterprise Account — Enterprise Account",
+          "owner": "Jordan Lee",
+          "priority": "Medium",
+          "dueDate": "2026-08-04",
+          "notes": "Demo exception resolution record for enterprise account; verify evidence and next action before completion. — Enterprise Account"
+        },
+        {
+          "id": "exception-resolution-003",
+          "state": "open",
+          "reference": "MUSIC-GENE-0003",
+          "subject": "AI Event Promotion — Quarterly Cycle — Quarterly Cycle",
+          "owner": "Taylor Brooks",
+          "priority": "High",
+          "dueDate": "2026-08-07",
+          "notes": "Demo exception resolution record for quarterly cycle; verify evidence and next action before completion. — Quarterly Cycle"
+        },
+        {
+          "id": "exception-resolution-004",
+          "state": "open",
+          "reference": "MUSIC-GENE-0004",
+          "subject": "AI Event Promotion — Priority Queue — Priority Queue",
+          "owner": "Morgan Chen",
+          "priority": "Critical",
+          "dueDate": "2026-08-10",
+          "notes": "Demo exception resolution record for priority queue; verify evidence and next action before completion. — Priority Queue"
+        },
+        {
+          "id": "exception-resolution-005",
+          "state": "open",
+          "reference": "MUSIC-GENE-0005",
+          "subject": "AI Event Promotion — Operations Review — Operations Review",
+          "owner": "Riley Patel",
+          "priority": "Low",
+          "dueDate": "2026-08-13",
+          "notes": "Demo exception resolution record for operations review; verify evidence and next action before completion. — Operations Review"
+        },
+        {
+          "id": "exception-resolution-006",
+          "state": "open",
+          "reference": "MUSIC-GENE-0006",
+          "subject": "AI Event Promotion — Customer Request — Customer Request",
+          "owner": "Casey Nguyen",
+          "priority": "Medium",
+          "dueDate": "2026-08-16",
+          "notes": "Demo exception resolution record for customer request; verify evidence and next action before completion. — Customer Request"
+        },
+        {
+          "id": "exception-resolution-007",
+          "state": "open",
+          "reference": "MUSIC-GENE-0007",
+          "subject": "AI Event Promotion — Compliance Check — Compliance Check",
+          "owner": "Cameron Diaz",
+          "priority": "High",
+          "dueDate": "2026-08-19",
+          "notes": "Demo exception resolution record for compliance check; verify evidence and next action before completion. — Compliance Check"
+        },
+        {
+          "id": "exception-resolution-008",
+          "state": "open",
+          "reference": "MUSIC-GENE-0008",
+          "subject": "AI Event Promotion — Service Window — Service Window",
+          "owner": "Drew Wilson",
+          "priority": "Critical",
+          "dueDate": "2026-08-22",
+          "notes": "Demo exception resolution record for service window; verify evidence and next action before completion. — Service Window"
+        },
+        {
+          "id": "exception-resolution-009",
+          "state": "open",
+          "reference": "MUSIC-GENE-0009",
+          "subject": "AI Event Promotion — Quality Sample — Quality Sample",
+          "owner": "Emerson Clark",
+          "priority": "Low",
+          "dueDate": "2026-08-25",
+          "notes": "Demo exception resolution record for quality sample; verify evidence and next action before completion. — Quality Sample"
+        },
+        {
+          "id": "exception-resolution-010",
+          "state": "open",
+          "reference": "MUSIC-GENE-0010",
+          "subject": "AI Event Promotion — Management Review — Management Review",
+          "owner": "Hayden Kim",
+          "priority": "Medium",
+          "dueDate": "2026-08-28",
+          "notes": "Demo exception resolution record for management review; verify evidence and next action before completion. — Management Review"
+        },
+        {
+          "id": "exception-resolution-011",
+          "state": "open",
+          "reference": "MUSIC-GENE-0011",
+          "subject": "AI Event Promotion — Exception Follow-up — Exception Follow-up",
+          "owner": "Jamie Rivera",
+          "priority": "High",
+          "dueDate": "2026-08-31",
+          "notes": "Demo exception resolution record for exception follow-up; verify evidence and next action before completion. — Exception Follow-up"
+        },
+        {
+          "id": "exception-resolution-012",
+          "state": "open",
+          "reference": "MUSIC-GENE-0012",
+          "subject": "AI Event Promotion — Evidence Package — Evidence Package",
+          "owner": "Kai Thompson",
+          "priority": "Critical",
+          "dueDate": "2026-09-03",
+          "notes": "Demo exception resolution record for evidence package; verify evidence and next action before completion. — Evidence Package"
+        },
+        {
+          "id": "exception-resolution-013",
+          "state": "open",
+          "reference": "MUSIC-GENE-0013",
+          "subject": "AI Event Promotion — Planning Cycle — Planning Cycle",
+          "owner": "Logan Shah",
+          "priority": "Low",
+          "dueDate": "2026-09-06",
+          "notes": "Demo exception resolution record for planning cycle; verify evidence and next action before completion. — Planning Cycle"
+        },
+        {
+          "id": "exception-resolution-014",
+          "state": "open",
+          "reference": "MUSIC-GENE-0014",
+          "subject": "AI Event Promotion — Performance Review — Performance Review",
+          "owner": "Parker Evans",
+          "priority": "Medium",
+          "dueDate": "2026-09-09",
+          "notes": "Demo exception resolution record for performance review; verify evidence and next action before completion. — Performance Review"
+        },
+        {
+          "id": "exception-resolution-015",
+          "state": "open",
+          "reference": "MUSIC-GENE-0015",
+          "subject": "AI Event Promotion — Final Verification — Final Verification",
+          "owner": "Quinn Murphy",
+          "priority": "High",
+          "dueDate": "2026-09-12",
+          "notes": "Demo exception resolution record for final verification; verify evidence and next action before completion. — Final Verification"
+        }
+      ]
+    },
+    {
+      "id": "approval-control",
+      "title": "AI Generators Approval Control",
+      "description": "Manage approval control for AI Generators within Music Generation, with explicit ownership, due dates, state transitions, and audit history.",
+      "fields": [
+        {
+          "key": "reference",
+          "label": "Reference",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "subject",
+          "label": "AI Generators Subject",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "owner",
+          "label": "Owner",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "priority",
+          "label": "Priority",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Low",
+            "Medium",
+            "High",
+            "Critical"
+          ]
+        },
+        {
+          "key": "dueDate",
+          "label": "Due Date",
+          "type": "date",
+          "required": true
+        },
+        {
+          "key": "notes",
+          "label": "Operational Notes",
+          "type": "textarea",
+          "required": true
+        }
+      ],
+      "states": [
+        "prepared",
+        "submitted",
+        "reviewing",
+        "approved",
+        "declined"
+      ],
+      "transitions": [
+        {
+          "id": "submit",
+          "label": "Submit for Approval",
+          "from": [
+            "prepared"
+          ],
+          "to": "submitted"
+        },
+        {
+          "id": "review",
+          "label": "Begin Approval Review",
+          "from": [
+            "submitted"
+          ],
+          "to": "reviewing"
+        },
+        {
+          "id": "approve",
+          "label": "Approve",
+          "from": [
+            "reviewing"
+          ],
+          "to": "approved"
+        },
+        {
+          "id": "decline",
+          "label": "Decline",
+          "from": [
+            "submitted",
+            "reviewing"
+          ],
+          "to": "declined"
+        }
+      ],
+      "seeds": [
+        {
+          "id": "approval-control-001",
+          "state": "prepared",
+          "reference": "MUSIC-GENE-0001",
+          "subject": "AI Generators — North Region — North Region",
+          "owner": "Avery Morgan",
+          "priority": "Low",
+          "dueDate": "2026-08-01",
+          "notes": "Demo approval control record for north region; verify evidence and next action before completion. — North Region"
+        },
+        {
+          "id": "approval-control-002",
+          "state": "prepared",
+          "reference": "MUSIC-GENE-0002",
+          "subject": "AI Generators — Enterprise Account — Enterprise Account",
+          "owner": "Jordan Lee",
+          "priority": "Medium",
+          "dueDate": "2026-08-04",
+          "notes": "Demo approval control record for enterprise account; verify evidence and next action before completion. — Enterprise Account"
+        },
+        {
+          "id": "approval-control-003",
+          "state": "prepared",
+          "reference": "MUSIC-GENE-0003",
+          "subject": "AI Generators — Quarterly Cycle — Quarterly Cycle",
+          "owner": "Taylor Brooks",
+          "priority": "High",
+          "dueDate": "2026-08-07",
+          "notes": "Demo approval control record for quarterly cycle; verify evidence and next action before completion. — Quarterly Cycle"
+        },
+        {
+          "id": "approval-control-004",
+          "state": "prepared",
+          "reference": "MUSIC-GENE-0004",
+          "subject": "AI Generators — Priority Queue — Priority Queue",
+          "owner": "Morgan Chen",
+          "priority": "Critical",
+          "dueDate": "2026-08-10",
+          "notes": "Demo approval control record for priority queue; verify evidence and next action before completion. — Priority Queue"
+        },
+        {
+          "id": "approval-control-005",
+          "state": "prepared",
+          "reference": "MUSIC-GENE-0005",
+          "subject": "AI Generators — Operations Review — Operations Review",
+          "owner": "Riley Patel",
+          "priority": "Low",
+          "dueDate": "2026-08-13",
+          "notes": "Demo approval control record for operations review; verify evidence and next action before completion. — Operations Review"
+        },
+        {
+          "id": "approval-control-006",
+          "state": "prepared",
+          "reference": "MUSIC-GENE-0006",
+          "subject": "AI Generators — Customer Request — Customer Request",
+          "owner": "Casey Nguyen",
+          "priority": "Medium",
+          "dueDate": "2026-08-16",
+          "notes": "Demo approval control record for customer request; verify evidence and next action before completion. — Customer Request"
+        },
+        {
+          "id": "approval-control-007",
+          "state": "prepared",
+          "reference": "MUSIC-GENE-0007",
+          "subject": "AI Generators — Compliance Check — Compliance Check",
+          "owner": "Cameron Diaz",
+          "priority": "High",
+          "dueDate": "2026-08-19",
+          "notes": "Demo approval control record for compliance check; verify evidence and next action before completion. — Compliance Check"
+        },
+        {
+          "id": "approval-control-008",
+          "state": "prepared",
+          "reference": "MUSIC-GENE-0008",
+          "subject": "AI Generators — Service Window — Service Window",
+          "owner": "Drew Wilson",
+          "priority": "Critical",
+          "dueDate": "2026-08-22",
+          "notes": "Demo approval control record for service window; verify evidence and next action before completion. — Service Window"
+        },
+        {
+          "id": "approval-control-009",
+          "state": "prepared",
+          "reference": "MUSIC-GENE-0009",
+          "subject": "AI Generators — Quality Sample — Quality Sample",
+          "owner": "Emerson Clark",
+          "priority": "Low",
+          "dueDate": "2026-08-25",
+          "notes": "Demo approval control record for quality sample; verify evidence and next action before completion. — Quality Sample"
+        },
+        {
+          "id": "approval-control-010",
+          "state": "prepared",
+          "reference": "MUSIC-GENE-0010",
+          "subject": "AI Generators — Management Review — Management Review",
+          "owner": "Hayden Kim",
+          "priority": "Medium",
+          "dueDate": "2026-08-28",
+          "notes": "Demo approval control record for management review; verify evidence and next action before completion. — Management Review"
+        },
+        {
+          "id": "approval-control-011",
+          "state": "prepared",
+          "reference": "MUSIC-GENE-0011",
+          "subject": "AI Generators — Exception Follow-up — Exception Follow-up",
+          "owner": "Jamie Rivera",
+          "priority": "High",
+          "dueDate": "2026-08-31",
+          "notes": "Demo approval control record for exception follow-up; verify evidence and next action before completion. — Exception Follow-up"
+        },
+        {
+          "id": "approval-control-012",
+          "state": "prepared",
+          "reference": "MUSIC-GENE-0012",
+          "subject": "AI Generators — Evidence Package — Evidence Package",
+          "owner": "Kai Thompson",
+          "priority": "Critical",
+          "dueDate": "2026-09-03",
+          "notes": "Demo approval control record for evidence package; verify evidence and next action before completion. — Evidence Package"
+        },
+        {
+          "id": "approval-control-013",
+          "state": "prepared",
+          "reference": "MUSIC-GENE-0013",
+          "subject": "AI Generators — Planning Cycle — Planning Cycle",
+          "owner": "Logan Shah",
+          "priority": "Low",
+          "dueDate": "2026-09-06",
+          "notes": "Demo approval control record for planning cycle; verify evidence and next action before completion. — Planning Cycle"
+        },
+        {
+          "id": "approval-control-014",
+          "state": "prepared",
+          "reference": "MUSIC-GENE-0014",
+          "subject": "AI Generators — Performance Review — Performance Review",
+          "owner": "Parker Evans",
+          "priority": "Medium",
+          "dueDate": "2026-09-09",
+          "notes": "Demo approval control record for performance review; verify evidence and next action before completion. — Performance Review"
+        },
+        {
+          "id": "approval-control-015",
+          "state": "prepared",
+          "reference": "MUSIC-GENE-0015",
+          "subject": "AI Generators — Final Verification — Final Verification",
+          "owner": "Quinn Murphy",
+          "priority": "High",
+          "dueDate": "2026-09-12",
+          "notes": "Demo approval control record for final verification; verify evidence and next action before completion. — Final Verification"
+        }
+      ]
+    },
+    {
+      "id": "performance-reporting",
+      "title": "AI Lesson Plan Performance Reporting",
+      "description": "Manage performance reporting for AI Lesson Plan within Music Generation, with explicit ownership, due dates, state transitions, and audit history.",
+      "fields": [
+        {
+          "key": "reference",
+          "label": "Reference",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "subject",
+          "label": "AI Lesson Plan Subject",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "owner",
+          "label": "Owner",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "priority",
+          "label": "Priority",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Low",
+            "Medium",
+            "High",
+            "Critical"
+          ]
+        },
+        {
+          "key": "dueDate",
+          "label": "Due Date",
+          "type": "date",
+          "required": true
+        },
+        {
+          "key": "notes",
+          "label": "Operational Notes",
+          "type": "textarea",
+          "required": true
+        }
+      ],
+      "states": [
+        "requested",
+        "preparing",
+        "ready",
+        "delivered",
+        "failed"
+      ],
+      "transitions": [
+        {
+          "id": "prepare",
+          "label": "Prepare Report",
+          "from": [
+            "requested",
+            "failed"
+          ],
+          "to": "preparing"
+        },
+        {
+          "id": "ready",
+          "label": "Mark Ready",
+          "from": [
+            "preparing"
+          ],
+          "to": "ready"
+        },
+        {
+          "id": "deliver",
+          "label": "Record Delivery",
+          "from": [
+            "ready"
+          ],
+          "to": "delivered"
+        },
+        {
+          "id": "fail",
+          "label": "Record Failure",
+          "from": [
+            "preparing"
+          ],
+          "to": "failed"
+        }
+      ],
+      "seeds": [
+        {
+          "id": "performance-reporting-001",
+          "state": "requested",
+          "reference": "MUSIC-GENE-0001",
+          "subject": "AI Lesson Plan — North Region — North Region",
+          "owner": "Avery Morgan",
+          "priority": "Low",
+          "dueDate": "2026-08-01",
+          "notes": "Demo performance reporting record for north region; verify evidence and next action before completion. — North Region"
+        },
+        {
+          "id": "performance-reporting-002",
+          "state": "requested",
+          "reference": "MUSIC-GENE-0002",
+          "subject": "AI Lesson Plan — Enterprise Account — Enterprise Account",
+          "owner": "Jordan Lee",
+          "priority": "Medium",
+          "dueDate": "2026-08-04",
+          "notes": "Demo performance reporting record for enterprise account; verify evidence and next action before completion. — Enterprise Account"
+        },
+        {
+          "id": "performance-reporting-003",
+          "state": "requested",
+          "reference": "MUSIC-GENE-0003",
+          "subject": "AI Lesson Plan — Quarterly Cycle — Quarterly Cycle",
+          "owner": "Taylor Brooks",
+          "priority": "High",
+          "dueDate": "2026-08-07",
+          "notes": "Demo performance reporting record for quarterly cycle; verify evidence and next action before completion. — Quarterly Cycle"
+        },
+        {
+          "id": "performance-reporting-004",
+          "state": "requested",
+          "reference": "MUSIC-GENE-0004",
+          "subject": "AI Lesson Plan — Priority Queue — Priority Queue",
+          "owner": "Morgan Chen",
+          "priority": "Critical",
+          "dueDate": "2026-08-10",
+          "notes": "Demo performance reporting record for priority queue; verify evidence and next action before completion. — Priority Queue"
+        },
+        {
+          "id": "performance-reporting-005",
+          "state": "requested",
+          "reference": "MUSIC-GENE-0005",
+          "subject": "AI Lesson Plan — Operations Review — Operations Review",
+          "owner": "Riley Patel",
+          "priority": "Low",
+          "dueDate": "2026-08-13",
+          "notes": "Demo performance reporting record for operations review; verify evidence and next action before completion. — Operations Review"
+        },
+        {
+          "id": "performance-reporting-006",
+          "state": "requested",
+          "reference": "MUSIC-GENE-0006",
+          "subject": "AI Lesson Plan — Customer Request — Customer Request",
+          "owner": "Casey Nguyen",
+          "priority": "Medium",
+          "dueDate": "2026-08-16",
+          "notes": "Demo performance reporting record for customer request; verify evidence and next action before completion. — Customer Request"
+        },
+        {
+          "id": "performance-reporting-007",
+          "state": "requested",
+          "reference": "MUSIC-GENE-0007",
+          "subject": "AI Lesson Plan — Compliance Check — Compliance Check",
+          "owner": "Cameron Diaz",
+          "priority": "High",
+          "dueDate": "2026-08-19",
+          "notes": "Demo performance reporting record for compliance check; verify evidence and next action before completion. — Compliance Check"
+        },
+        {
+          "id": "performance-reporting-008",
+          "state": "requested",
+          "reference": "MUSIC-GENE-0008",
+          "subject": "AI Lesson Plan — Service Window — Service Window",
+          "owner": "Drew Wilson",
+          "priority": "Critical",
+          "dueDate": "2026-08-22",
+          "notes": "Demo performance reporting record for service window; verify evidence and next action before completion. — Service Window"
+        },
+        {
+          "id": "performance-reporting-009",
+          "state": "requested",
+          "reference": "MUSIC-GENE-0009",
+          "subject": "AI Lesson Plan — Quality Sample — Quality Sample",
+          "owner": "Emerson Clark",
+          "priority": "Low",
+          "dueDate": "2026-08-25",
+          "notes": "Demo performance reporting record for quality sample; verify evidence and next action before completion. — Quality Sample"
+        },
+        {
+          "id": "performance-reporting-010",
+          "state": "requested",
+          "reference": "MUSIC-GENE-0010",
+          "subject": "AI Lesson Plan — Management Review — Management Review",
+          "owner": "Hayden Kim",
+          "priority": "Medium",
+          "dueDate": "2026-08-28",
+          "notes": "Demo performance reporting record for management review; verify evidence and next action before completion. — Management Review"
+        },
+        {
+          "id": "performance-reporting-011",
+          "state": "requested",
+          "reference": "MUSIC-GENE-0011",
+          "subject": "AI Lesson Plan — Exception Follow-up — Exception Follow-up",
+          "owner": "Jamie Rivera",
+          "priority": "High",
+          "dueDate": "2026-08-31",
+          "notes": "Demo performance reporting record for exception follow-up; verify evidence and next action before completion. — Exception Follow-up"
+        },
+        {
+          "id": "performance-reporting-012",
+          "state": "requested",
+          "reference": "MUSIC-GENE-0012",
+          "subject": "AI Lesson Plan — Evidence Package — Evidence Package",
+          "owner": "Kai Thompson",
+          "priority": "Critical",
+          "dueDate": "2026-09-03",
+          "notes": "Demo performance reporting record for evidence package; verify evidence and next action before completion. — Evidence Package"
+        },
+        {
+          "id": "performance-reporting-013",
+          "state": "requested",
+          "reference": "MUSIC-GENE-0013",
+          "subject": "AI Lesson Plan — Planning Cycle — Planning Cycle",
+          "owner": "Logan Shah",
+          "priority": "Low",
+          "dueDate": "2026-09-06",
+          "notes": "Demo performance reporting record for planning cycle; verify evidence and next action before completion. — Planning Cycle"
+        },
+        {
+          "id": "performance-reporting-014",
+          "state": "requested",
+          "reference": "MUSIC-GENE-0014",
+          "subject": "AI Lesson Plan — Performance Review — Performance Review",
+          "owner": "Parker Evans",
+          "priority": "Medium",
+          "dueDate": "2026-09-09",
+          "notes": "Demo performance reporting record for performance review; verify evidence and next action before completion. — Performance Review"
+        },
+        {
+          "id": "performance-reporting-015",
+          "state": "requested",
+          "reference": "MUSIC-GENE-0015",
+          "subject": "AI Lesson Plan — Final Verification — Final Verification",
+          "owner": "Quinn Murphy",
+          "priority": "High",
+          "dueDate": "2026-09-12",
+          "notes": "Demo performance reporting record for final verification; verify evidence and next action before completion. — Final Verification"
+        }
+      ]
+    }
+  ],
+  "resources": []
+}

@@ -81,6 +81,84 @@
     ]
   },
   {
+    "name": "AI Catalog Acquisition Advisor",
+    "canonicalKey": "acquisition advisor ai catalog",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/acquisition"
+    ],
+    "sourceProjects": [
+      "AIMusicRightsRoyaltyTracker"
+    ],
+    "consolidatedFromApps": [
+      "media-content-creative/music-generation"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "client/src/pages/AIToolsPage.js:57",
+        "route": "/ai/acquisition",
+        "originApp": "media-content-creative/music-generation"
+      }
+    ]
+  },
+  {
+    "name": "AI Catalog Valuation",
+    "canonicalKey": "ai catalog valuation",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/valuation"
+    ],
+    "sourceProjects": [
+      "AIMusicRightsRoyaltyTracker"
+    ],
+    "consolidatedFromApps": [
+      "media-content-creative/music-generation"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "client/src/pages/AIPage.js:21",
+        "route": "/ai/valuation",
+        "originApp": "media-content-creative/music-generation"
+      }
+    ]
+  },
+  {
+    "name": "AI Contract Analysis",
+    "canonicalKey": "ai analysis contract",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/contract-analysis"
+    ],
+    "sourceProjects": [
+      "AIMusicRightsRoyaltyTracker"
+    ],
+    "consolidatedFromApps": [
+      "media-content-creative/music-generation"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "client/src/pages/AIPage.js:53",
+        "route": "/ai/contract-analysis",
+        "originApp": "media-content-creative/music-generation"
+      }
+    ]
+  },
+  {
     "name": "AI Ensemble Assignment",
     "canonicalKey": "ai assignment ensemble",
     "aliases": [],
@@ -187,6 +265,41 @@
     ]
   },
   {
+    "name": "AI History",
+    "canonicalKey": "ai history",
+    "aliases": [],
+    "kinds": [
+      "ai-page",
+      "api"
+    ],
+    "routes": [
+      "/ai-history",
+      "/history?tool=ai-history"
+    ],
+    "sourceProjects": [
+      "AiImageGeneration"
+    ],
+    "consolidatedFromApps": [
+      "media-content-creative/music-generation"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AiImageGeneration",
+        "path": "frontend/src/pages/History.jsx:1",
+        "route": "/history?tool=ai-history",
+        "originApp": "media-content-creative/music-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiImageGeneration",
+        "path": "backend/routes/exportData.js:44",
+        "route": "/ai-history",
+        "originApp": "media-content-creative/music-generation"
+      }
+    ]
+  },
+  {
     "name": "AI Lesson Plan",
     "canonicalKey": "ai lesson plan",
     "aliases": [],
@@ -213,6 +326,84 @@
     ]
   },
   {
+    "name": "AI Licensing Recommender",
+    "canonicalKey": "ai licensing recommender",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/licensing"
+    ],
+    "sourceProjects": [
+      "AIMusicRightsRoyaltyTracker"
+    ],
+    "consolidatedFromApps": [
+      "media-content-creative/music-generation"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "client/src/pages/AIToolsPage.js:31",
+        "route": "/ai/licensing",
+        "originApp": "media-content-creative/music-generation"
+      }
+    ]
+  },
+  {
+    "name": "AI Market Trends",
+    "canonicalKey": "ai market trend",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/market-trends"
+    ],
+    "sourceProjects": [
+      "AIMusicRightsRoyaltyTracker"
+    ],
+    "consolidatedFromApps": [
+      "media-content-creative/music-generation"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "client/src/pages/AIPage.js:63",
+        "route": "/ai/market-trends",
+        "originApp": "media-content-creative/music-generation"
+      }
+    ]
+  },
+  {
+    "name": "AI Metadata Cleaner",
+    "canonicalKey": "ai cleaner metadata",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/metadata"
+    ],
+    "sourceProjects": [
+      "AIMusicRightsRoyaltyTracker"
+    ],
+    "consolidatedFromApps": [
+      "media-content-creative/music-generation"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "client/src/pages/AIToolsPage.js:21",
+        "route": "/ai/metadata",
+        "originApp": "media-content-creative/music-generation"
+      }
+    ]
+  },
+  {
     "name": "AI Parent Summary",
     "canonicalKey": "ai parent summary",
     "aliases": [],
@@ -234,6 +425,32 @@
         "sourceProject": "AIMusicSchoolAcademyManager",
         "path": "frontend/src/pages/AIParentSummary.jsx",
         "route": "/AIParentSummary",
+        "originApp": "media-content-creative/music-generation"
+      }
+    ]
+  },
+  {
+    "name": "AI Plagiarism Detection",
+    "canonicalKey": "ai detection plagiarism",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/plagiarism"
+    ],
+    "sourceProjects": [
+      "AIMusicRightsRoyaltyTracker"
+    ],
+    "consolidatedFromApps": [
+      "media-content-creative/music-generation"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "client/src/pages/AIPage.js:9",
+        "route": "/ai/plagiarism",
         "originApp": "media-content-creative/music-generation"
       }
     ]
@@ -364,6 +581,110 @@
         "sourceProject": "AIMusicSchoolAcademyManager",
         "path": "frontend/src/pages/AIRetentionRisk.jsx",
         "route": "/AIRetentionRisk",
+        "originApp": "media-content-creative/music-generation"
+      }
+    ]
+  },
+  {
+    "name": "AI Revenue Optimizer",
+    "canonicalKey": "ai optimizer revenue",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/revenue"
+    ],
+    "sourceProjects": [
+      "AIMusicRightsRoyaltyTracker"
+    ],
+    "consolidatedFromApps": [
+      "media-content-creative/music-generation"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "client/src/pages/AIToolsPage.js:44",
+        "route": "/ai/revenue",
+        "originApp": "media-content-creative/music-generation"
+      }
+    ]
+  },
+  {
+    "name": "AI Rights Clearance",
+    "canonicalKey": "ai clearance right",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/clearance"
+    ],
+    "sourceProjects": [
+      "AIMusicRightsRoyaltyTracker"
+    ],
+    "consolidatedFromApps": [
+      "media-content-creative/music-generation"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "client/src/pages/AIPage.js:30",
+        "route": "/ai/clearance",
+        "originApp": "media-content-creative/music-generation"
+      }
+    ]
+  },
+  {
+    "name": "AI Royalty Forecasting",
+    "canonicalKey": "ai forecasting royalty",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/forecasting"
+    ],
+    "sourceProjects": [
+      "AIMusicRightsRoyaltyTracker"
+    ],
+    "consolidatedFromApps": [
+      "media-content-creative/music-generation"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "client/src/pages/AIPage.js:42",
+        "route": "/ai/forecasting",
+        "originApp": "media-content-creative/music-generation"
+      }
+    ]
+  },
+  {
+    "name": "AI Sampling Detection",
+    "canonicalKey": "ai detection sampling",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/sampling"
+    ],
+    "sourceProjects": [
+      "AIMusicRightsRoyaltyTracker"
+    ],
+    "consolidatedFromApps": [
+      "media-content-creative/music-generation"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "client/src/pages/AIToolsPage.js:9",
+        "route": "/ai/sampling",
         "originApp": "media-content-creative/music-generation"
       }
     ]
@@ -1443,6 +1764,32 @@
     ]
   },
   {
+    "name": "Copyright Tracking Usco",
+    "canonicalKey": "copyright tracking usco",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/copyright"
+    ],
+    "sourceProjects": [
+      "AIMusicRightsRoyaltyTracker"
+    ],
+    "consolidatedFromApps": [
+      "media-content-creative/music-generation"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "client/src/pages/AIToolsPage.js:77",
+        "route": "/ai/copyright",
+        "originApp": "media-content-creative/music-generation"
+      }
+    ]
+  },
+  {
     "name": "Corrections",
     "canonicalKey": "correction",
     "aliases": [],
@@ -1464,6 +1811,41 @@
         "sourceProject": "AIMusicRightsRoyaltyTracker",
         "path": "server/routes/governedRoyalties.js:335",
         "route": "/calculations/:id/corrections",
+        "originApp": "media-content-creative/music-generation"
+      }
+    ]
+  },
+  {
+    "name": "Create Song Pipeline",
+    "canonicalKey": "pipeline song",
+    "aliases": [],
+    "kinds": [
+      "ai-page",
+      "api"
+    ],
+    "routes": [
+      "/create-song-pipeline",
+      "/song-pipeline?tool=create-song-pipeline"
+    ],
+    "sourceProjects": [
+      "AIMusicGeneration"
+    ],
+    "consolidatedFromApps": [
+      "media-content-creative/music-generation"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIMusicGeneration",
+        "path": "client/src/pages/SongPipeline.js:94",
+        "route": "/song-pipeline?tool=create-song-pipeline",
+        "originApp": "media-content-creative/music-generation"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIMusicGeneration",
+        "path": "server/routes/songPipeline.js:8",
+        "route": "/create-song-pipeline",
         "originApp": "media-content-creative/music-generation"
       }
     ]
@@ -1525,6 +1907,7 @@
     "canonicalKey": "assignment ensemble",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "navigation",
       "page"
@@ -1540,6 +1923,13 @@
       "media-content-creative/music-generation"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "frontend/src/pages/AIEnsembleAssignment.jsx:1",
+        "route": "/ai/ensemble-assignment",
+        "originApp": "media-content-creative/music-generation"
+      },
       {
         "kind": "api",
         "sourceProject": "AIMusicSchoolAcademyManager",
@@ -1676,6 +2066,7 @@
     "canonicalKey": "event promotion",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "navigation",
       "page"
@@ -1691,6 +2082,13 @@
       "media-content-creative/music-generation"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "frontend/src/pages/AIEventPromotion.jsx:1",
+        "route": "/ai/event-promotion",
+        "originApp": "media-content-creative/music-generation"
+      },
       {
         "kind": "api",
         "sourceProject": "AIMusicSchoolAcademyManager",
@@ -3543,7 +3941,6 @@
       "page"
     ],
     "routes": [
-      "/:id/generate",
       "/Generate",
       "/ai/generate",
       "/generate"
@@ -3551,16 +3948,12 @@
     "sourceProjects": [
       "AIAdCopyCreativeGenerator",
       "AIBoardGameTTRPGGameMaster",
-      "AIContentRepurposingEngine",
       "AILogoBrandKitGenerator",
       "AIMusicGeneration",
-      "AIPlagiarismAIContentDetector",
-      "AiContentStudio",
       "AiImageGeneration",
       "AiVideoScriptContent"
     ],
     "consolidatedFromApps": [
-      "media-content-creative/content-studio",
       "media-content-creative/game-balancing-playtesting-agent",
       "media-content-creative/logo-brand-kit-generator",
       "media-content-creative/marketing-copy-generator",
@@ -3568,188 +3961,6 @@
       "media-content-creative/video-generation"
     ],
     "evidence": [
-      {
-        "kind": "api",
-        "sourceProject": "AIContentRepurposingEngine",
-        "path": "backend/routes/ai.js:89",
-        "route": "/generate",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIPlagiarismAIContentDetector",
-        "path": "server/routes/reports.js:56",
-        "route": "/:id/generate",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiContentStudio",
-        "path": "backend/src/routes/audio.js:118",
-        "route": "/:id/generate",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiContentStudio",
-        "path": "backend/src/routes/blog-outlines.js:122",
-        "route": "/:id/generate",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiContentStudio",
-        "path": "backend/src/routes/blogs.js:134",
-        "route": "/:id/generate",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiContentStudio",
-        "path": "backend/src/routes/calendar.js:211",
-        "route": "/:id/generate",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiContentStudio",
-        "path": "backend/src/routes/emails.js:116",
-        "route": "/:id/generate",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiContentStudio",
-        "path": "backend/src/routes/image-suggester.js:120",
-        "route": "/:id/generate",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiContentStudio",
-        "path": "backend/src/routes/images.js:118",
-        "route": "/:id/generate",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiContentStudio",
-        "path": "backend/src/routes/marketing.js:116",
-        "route": "/:id/generate",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiContentStudio",
-        "path": "backend/src/routes/music.js:116",
-        "route": "/:id/generate",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiContentStudio",
-        "path": "backend/src/routes/newsletters.js:122",
-        "route": "/:id/generate",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiContentStudio",
-        "path": "backend/src/routes/performance.js:121",
-        "route": "/:id/generate",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiContentStudio",
-        "path": "backend/src/routes/plagiarism.js:119",
-        "route": "/:id/generate",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiContentStudio",
-        "path": "backend/src/routes/podcasts.js:117",
-        "route": "/:id/generate",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiContentStudio",
-        "path": "backend/src/routes/press-releases.js:20",
-        "route": "/generate",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiContentStudio",
-        "path": "backend/src/routes/press-releases.js:249",
-        "route": "/:id/generate",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiContentStudio",
-        "path": "backend/src/routes/repurpose.js:123",
-        "route": "/:id/generate",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiContentStudio",
-        "path": "backend/src/routes/scripts.js:116",
-        "route": "/:id/generate",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiContentStudio",
-        "path": "backend/src/routes/seo.js:114",
-        "route": "/:id/generate",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiContentStudio",
-        "path": "backend/src/routes/social.js:115",
-        "route": "/:id/generate",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiContentStudio",
-        "path": "backend/src/routes/summaries.js:115",
-        "route": "/:id/generate",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiContentStudio",
-        "path": "backend/src/routes/text.js:135",
-        "route": "/:id/generate",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiContentStudio",
-        "path": "backend/src/routes/translations.js:116",
-        "route": "/:id/generate",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiContentStudio",
-        "path": "backend/src/routes/videos.js:150",
-        "route": "/:id/generate",
-        "originApp": "media-content-creative/content-studio"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiContentStudio",
-        "path": "backend/src/routes/voiceovers.js:116",
-        "route": "/:id/generate",
-        "originApp": "media-content-creative/content-studio"
-      },
       {
         "kind": "api",
         "sourceProject": "AIBoardGameTTRPGGameMaster",
@@ -4051,9 +4262,11 @@
     "canonicalKey": "beat generate",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-generators?tool=generate-beat",
       "/generate-beat"
     ],
     "sourceProjects": [
@@ -4063,6 +4276,13 @@
       "media-content-creative/music-generation"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIMusicGeneration",
+        "path": "client/src/pages/AIGenerators.js:269",
+        "route": "/ai-generators?tool=generate-beat",
+        "originApp": "media-content-creative/music-generation"
+      },
       {
         "kind": "api",
         "sourceProject": "AIMusicGeneration",
@@ -7288,6 +7508,7 @@
     "canonicalKey": "lesson plan",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "navigation",
       "page"
@@ -7303,6 +7524,13 @@
       "media-content-creative/music-generation"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "frontend/src/pages/AILessonPlan.jsx:1",
+        "route": "/ai/lesson-plan",
+        "originApp": "media-content-creative/music-generation"
+      },
       {
         "kind": "api",
         "sourceProject": "AIMusicSchoolAcademyManager",
@@ -7604,6 +7832,7 @@
     "canonicalKey": "campaign marketing",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
@@ -7612,14 +7841,19 @@
       "/marketing-campaign"
     ],
     "sourceProjects": [
-      "AIMusicSchoolAcademyManager",
-      "AIVenueManager"
+      "AIMusicSchoolAcademyManager"
     ],
     "consolidatedFromApps": [
-      "media-content-creative/event-planner",
       "media-content-creative/music-generation"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "frontend/src/pages/AIMarketingCampaign.jsx:1",
+        "route": "/ai/marketing-campaign",
+        "originApp": "media-content-creative/music-generation"
+      },
       {
         "kind": "api",
         "sourceProject": "AIMusicSchoolAcademyManager",
@@ -7640,20 +7874,6 @@
         "path": "frontend/src/pages/Dashboard.jsx:47",
         "route": "/ai/marketing-campaign",
         "originApp": "media-content-creative/music-generation"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIVenueManager",
-        "path": "client/src/App.js:90",
-        "route": "/ai/marketing-campaign",
-        "originApp": "media-content-creative/event-planner"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIVenueManager",
-        "path": "client/src/components/Layout.js:25",
-        "route": "/ai/marketing-campaign",
-        "originApp": "media-content-creative/event-planner"
       }
     ]
   },
@@ -7679,6 +7899,32 @@
         "sourceProject": "AIMusicRightsRoyaltyTracker",
         "path": "server/routes/ai.js:307",
         "route": "/mechanical-licensing",
+        "originApp": "media-content-creative/music-generation"
+      }
+    ]
+  },
+  {
+    "name": "Mechanical Licensing Mlc Hfa",
+    "canonicalKey": "hfa licensing mechanical mlc",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/mechanical"
+    ],
+    "sourceProjects": [
+      "AIMusicRightsRoyaltyTracker"
+    ],
+    "consolidatedFromApps": [
+      "media-content-creative/music-generation"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "client/src/pages/AIToolsPage.js:87",
+        "route": "/ai/mechanical",
         "originApp": "media-content-creative/music-generation"
       }
     ]
@@ -8037,6 +8283,7 @@
     "canonicalKey": "parent summary",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
@@ -8051,6 +8298,13 @@
       "media-content-creative/music-generation"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "frontend/src/pages/AIParentSummary.jsx:1",
+        "route": "/ai/parent-summary",
+        "originApp": "media-content-creative/music-generation"
+      },
       {
         "kind": "api",
         "sourceProject": "AIMusicSchoolAcademyManager",
@@ -8298,6 +8552,7 @@
     "canonicalKey": "evaluation practice",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "navigation",
       "page"
@@ -8313,6 +8568,13 @@
       "media-content-creative/music-generation"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "frontend/src/pages/AIPracticeEvaluation.jsx:1",
+        "route": "/ai/practice-evaluation",
+        "originApp": "media-content-creative/music-generation"
+      },
       {
         "kind": "api",
         "sourceProject": "AIMusicSchoolAcademyManager",
@@ -8390,6 +8652,7 @@
     "canonicalKey": "plan practice",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "navigation",
       "page"
@@ -8405,6 +8668,13 @@
       "media-content-creative/music-generation"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "frontend/src/pages/AIPracticePlan.jsx:1",
+        "route": "/ai/practice-plan",
+        "originApp": "media-content-creative/music-generation"
+      },
       {
         "kind": "api",
         "sourceProject": "AIMusicSchoolAcademyManager",
@@ -8457,6 +8727,32 @@
         "sourceProject": "AiImageGeneration",
         "path": "backend/routes/integrations.js:33",
         "route": "/storage/presign",
+        "originApp": "media-content-creative/music-generation"
+      }
+    ]
+  },
+  {
+    "name": "Pro Performance Tracking",
+    "canonicalKey": "performance pro tracking",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/pro"
+    ],
+    "sourceProjects": [
+      "AIMusicRightsRoyaltyTracker"
+    ],
+    "consolidatedFromApps": [
+      "media-content-creative/music-generation"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "client/src/pages/AIToolsPage.js:98",
+        "route": "/ai/pro",
         "originApp": "media-content-creative/music-generation"
       }
     ]
@@ -8516,6 +8812,7 @@
     "canonicalKey": "progress report",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "navigation",
       "page"
@@ -8531,6 +8828,13 @@
       "media-content-creative/music-generation"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "frontend/src/pages/AIProgressReport.jsx:1",
+        "route": "/ai/progress-report",
+        "originApp": "media-content-creative/music-generation"
+      },
       {
         "kind": "api",
         "sourceProject": "AIMusicSchoolAcademyManager",
@@ -8924,6 +9228,7 @@
     "canonicalKey": "program recital",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "navigation",
       "page"
@@ -8939,6 +9244,13 @@
       "media-content-creative/music-generation"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "frontend/src/pages/AIRecitalProgram.jsx:1",
+        "route": "/ai/recital-program",
+        "originApp": "media-content-creative/music-generation"
+      },
       {
         "kind": "api",
         "sourceProject": "AIMusicSchoolAcademyManager",
@@ -9278,6 +9590,7 @@
     "canonicalKey": "retention risk",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "navigation",
       "page"
@@ -9293,6 +9606,13 @@
       "media-content-creative/music-generation"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "frontend/src/pages/AIRetentionRisk.jsx:1",
+        "route": "/ai/retention-risk",
+        "originApp": "media-content-creative/music-generation"
+      },
       {
         "kind": "api",
         "sourceProject": "AIMusicSchoolAcademyManager",
@@ -9604,6 +9924,32 @@
     ]
   },
   {
+    "name": "Royalty Settlement Streaming",
+    "canonicalKey": "royalty settlement streaming",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/settlement"
+    ],
+    "sourceProjects": [
+      "AIMusicRightsRoyaltyTracker"
+    ],
+    "consolidatedFromApps": [
+      "media-content-creative/music-generation"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIMusicRightsRoyaltyTracker",
+        "path": "client/src/pages/AIToolsPage.js:68",
+        "route": "/ai/settlement",
+        "originApp": "media-content-creative/music-generation"
+      }
+    ]
+  },
+  {
     "name": "Royalty Split Suggest",
     "canonicalKey": "royalty split suggest",
     "aliases": [],
@@ -9660,6 +10006,7 @@
     "canonicalKey": "makeup schedule",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "navigation",
       "page"
@@ -9675,6 +10022,13 @@
       "media-content-creative/music-generation"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "frontend/src/pages/AIScheduleMakeup.jsx:1",
+        "route": "/ai/schedule-makeup",
+        "originApp": "media-content-creative/music-generation"
+      },
       {
         "kind": "api",
         "sourceProject": "AIMusicSchoolAcademyManager",
@@ -9727,6 +10081,7 @@
     "canonicalKey": "assessment skill",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "navigation",
       "page"
@@ -9742,6 +10097,13 @@
       "media-content-creative/music-generation"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "frontend/src/pages/AISkillAssessment.jsx:1",
+        "route": "/ai/skill-assessment",
+        "originApp": "media-content-creative/music-generation"
+      },
       {
         "kind": "api",
         "sourceProject": "AIMusicSchoolAcademyManager",
@@ -9775,16 +10137,12 @@
   {
     "name": "Song Pipeline",
     "canonicalKey": "pipeline song",
-    "aliases": [
-      "Create Song Pipeline"
-    ],
+    "aliases": [],
     "kinds": [
-      "api",
       "page"
     ],
     "routes": [
       "/SongPipeline",
-      "/create-song-pipeline",
       "/song-pipeline"
     ],
     "sourceProjects": [
@@ -9794,13 +10152,6 @@
       "media-content-creative/music-generation"
     ],
     "evidence": [
-      {
-        "kind": "api",
-        "sourceProject": "AIMusicGeneration",
-        "path": "server/routes/songPipeline.js:8",
-        "route": "/create-song-pipeline",
-        "originApp": "media-content-creative/music-generation"
-      },
       {
         "kind": "page",
         "sourceProject": "AIMusicGeneration",
@@ -9874,6 +10225,7 @@
     "canonicalKey": "matching student",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "navigation",
       "page"
@@ -9889,6 +10241,13 @@
       "media-content-creative/music-generation"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIMusicSchoolAcademyManager",
+        "path": "frontend/src/pages/AIStudentMatching.jsx:1",
+        "route": "/ai/student-matching",
+        "originApp": "media-content-creative/music-generation"
+      },
       {
         "kind": "api",
         "sourceProject": "AIMusicSchoolAcademyManager",
@@ -10029,63 +10388,21 @@
       "Style Transfer Detail"
     ],
     "kinds": [
-      "api",
       "navigation",
       "page"
     ],
     "routes": [
       "/StyleTransfer",
       "/StyleTransferDetail",
-      "/ai/style-transfer",
-      "/api/ai/style-transfer",
       "/style-transfer"
     ],
     "sourceProjects": [
-      "AIGameAssetGenerator",
-      "AILocalizationTranslationAgency",
       "AiImageGeneration"
     ],
     "consolidatedFromApps": [
-      "media-content-creative/game-balancing-playtesting-agent",
-      "media-content-creative/logo-brand-kit-generator",
       "media-content-creative/music-generation"
     ],
     "evidence": [
-      {
-        "kind": "api",
-        "sourceProject": "AIGameAssetGenerator",
-        "path": "backend/routes/ai.js:242",
-        "route": "/style-transfer",
-        "originApp": "media-content-creative/game-balancing-playtesting-agent"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIGameAssetGenerator",
-        "path": "frontend/src/pages/AIToolsPage.jsx:71",
-        "route": "/api/ai/style-transfer",
-        "originApp": "media-content-creative/game-balancing-playtesting-agent"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AILocalizationTranslationAgency",
-        "path": "client/src/App.js:80",
-        "route": "/ai/style-transfer",
-        "originApp": "media-content-creative/logo-brand-kit-generator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AILocalizationTranslationAgency",
-        "path": "client/src/components/Layout.js:20",
-        "route": "/ai/style-transfer",
-        "originApp": "media-content-creative/logo-brand-kit-generator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AILocalizationTranslationAgency",
-        "path": "client/src/pages/Dashboard.js:29",
-        "route": "/ai/style-transfer",
-        "originApp": "media-content-creative/logo-brand-kit-generator"
-      },
       {
         "kind": "navigation",
         "sourceProject": "AiImageGeneration",

@@ -11,12 +11,12 @@
     "AIMusicSchoolAcademyManager",
     "AiImageGeneration"
   ],
-  "featureCount": 202,
-  "candidateFeatureCount": 283,
-  "eliminatedSimilarFeatures": 81,
-  "evidenceCount": 936,
-  "aiPageCount": 1,
-  "sourceAIPageCount": 1,
+  "featureCount": 219,
+  "candidateFeatureCount": 298,
+  "eliminatedSimilarFeatures": 79,
+  "evidenceCount": 935,
+  "aiPageCount": 31,
+  "sourceAIPageCount": 31,
   "featureEvidencePolicy": "Existing source routes, pages, APIs, models, schemas, and navigation only",
   "optimizationPolicy": "Equivalent feature names are consolidated once per industry and assigned to one canonical app owner",
   "database": "database.sqlite",
@@ -25,6 +25,6 @@
     "seededTables": 46,
     "seededRows": 697
   },
-  "visibleFeatureCount": 58,
+  "visibleFeatureCount": 85,
   "featureVisibilityMode": "seeded-or-ai"
 }

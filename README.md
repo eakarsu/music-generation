@@ -3,7 +3,7 @@
 Industry: **Media, Content & Creative**  
 Specialization: **Music Generation**
 
-This standalone application consolidates source-backed capabilities into 202 optimized features, including 58 visible data-backed or AI-enabled views. Its public demo SQLite database contains 697 sanitized source rows across 46 imported tables and 120 operational workflow records.
+This standalone application consolidates source-backed capabilities into 219 optimized features, including 85 visible data-backed or AI-enabled views. Its public demo SQLite database contains 697 sanitized source rows across 46 imported tables and 120 operational workflow records.
 
 ## Run locally
 
